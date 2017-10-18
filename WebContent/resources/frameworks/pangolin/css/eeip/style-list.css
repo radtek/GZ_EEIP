@@ -1,0 +1,187 @@
+/*-----------操作区域-Start-----------*/
+.operating-area{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #e9eaec;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 10px 30px;
+}
+.operating-area > div{
+	float:left;
+}
+.text-content{
+	text-align: right;
+	line-height:34px;
+}
+.btn-1{
+	width:810px;
+}
+.btn-2{
+	width: 670px;
+}
+.input-content input{
+	width:100%;
+	height:34px;
+	border:1px solid #ccc;
+	border-radius: 3px;
+	padding:0 10px;
+}
+.button-content{
+	width:150px;
+	padding-left:30px;
+}
+.button-content .btn{
+	width:100%;
+	height:34px;
+	color:#fff;
+}
+.button-content .btn i{
+	margin-right:5px;
+}
+.btn-color1{
+    background-color:#64a565;
+    /* border-bottom: 3px solid #417b41; */
+}
+.btn-color2{
+    background-color:#282e50;
+    /* border-bottom: 3px solid #151932; */
+}
+
+.log-content{
+	float:left;
+	width:880px;
+	overflow:hidden;
+	margin-bottom:0;
+}
+.log-content li{
+	float: left;
+    width: 130px;
+    text-align: center;
+    padding:0 5px;
+}
+.log-content li a{
+	width:100%;
+	line-height:34px;
+	display: block;
+    cursor: pointer;
+    color:#333;
+}
+.log-content .action{
+	border-bottom:1px solid #282e50;
+}
+.log-content li a:hover{
+	border-bottom:1px solid #282e50;
+}
+/*-----------操作区域-End-----------*/
+
+
+
+/*-----------列表区域-Start-----------*/
+.table-content{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.table{
+    /* font-size: 16px; */
+    font-family: "Microsoft Yahei";
+    background-color: #f9f9f9;
+}
+.table thead > tr > th{
+	background-color:#f9f9f9;
+}
+.table th{
+    font-family: "Microsoft Yahei";
+}
+.table>thead>tr>th, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>tbody>tr>td, 
+.table>tfoot>tr>td{
+    padding: 12px 8px;
+    border-top: none;
+    color: #444;
+    font-size:13px;
+}
+.table>thead>tr>td, 
+.table>tbody>tr>td, 
+.table>tfoot>tr>td{
+    /* font-size:14px; */
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, 
+.table-striped > tbody > tr:nth-child(2n+1) > th{
+    background-color:#f2f3f7;
+}
+.table-hover>tbody>tr:hover>td, 
+.table-hover>tbody>tr:hover>th{
+    background-color:#dce2f0;
+}
+.table thead > tr > th{
+    color:#888;
+}
+.sorting_asc, .sorting_desc, .sorting{
+    background-image:none;
+}
+.table-action a{
+    cursor: pointer;
+    padding-left: 5px;
+}
+.table tbody > tr > td a{
+	padding: 0px 8px;
+    cursor: pointer;
+    display: inline-block;
+    color: #444;
+}
+
+.dataTables_info{
+	color:#aaa;
+}
+.paging_full_numbers a.paginate_button, 
+.paging_full_numbers a.paginate_active{
+	padding:3px 12px;
+	font-size:13px;
+}
+/*-----------列表区域-End-----------*/
+
+
+
+/*-----------模态框-Start-----------*/
+.modal-open{
+	padding-right:0 !important;
+}
+.modal-body .form-horizontal{
+	overflow:hidden;
+}
+.modal-body .form-group label{
+	font-size:16px;
+}
+.modal-body .form-control{
+	font-size:16px;
+}
+
+
+.check-material-list li{
+    font-size: 17px;
+    line-height: 30px;
+}
+.check-material-list li:hover{
+	border-bottom:1px solid #ddd;
+}
+.check-material-list li i{
+    margin-left: 20px;
+    cursor: pointer;
+    color: #777;
+}
+/*-----------模态框-End-----------*/
+
+
+/*-----------有左侧树形结构-Start-----------*/
+.has-btn-1 .button-content{
+	margin-left:880px;
+}
+.panel{
+	background-color:rgba(0,0,0,0);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+/*-----------有左侧树形结构-End-----------*/

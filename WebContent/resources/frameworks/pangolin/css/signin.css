@@ -1,0 +1,334 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+}
+input:focus, button:focus, textarea:focus, select:focus{
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+.signinBg {
+	/* background-color: #3276b1; */
+	background: url(../images/eeip/loginBgImg.png) no-repeat left top;
+	background-size: cover;
+}
+
+
+.login-content{
+	width: 30%;
+    margin: 0 auto;
+    padding-top: 60px;
+    /* display:none; */
+}
+.logo-img{
+	width: 30%;
+    margin: 0 auto;
+}
+.logo-img img{
+	width:100%;
+}
+.system-name{
+	padding: 15px 0;
+}
+.system-name p{
+	text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.login-section{
+	/* border-width:1px;
+	border-style:solid;
+	border-image: -webkit-linear-gradient( rgba(129,131,144,1), rgba(129,131,144,0) ) 30 30;
+	border-image: -moz-linear-gradient( rgba(129,131,144,1), rgba(129,131,144,0) ) 30 30;
+	border-image: linear-gradient( rgba(129,131,144,1), rgba(129,131,144,0) ) 30 30; */
+	background: url(../images/eeip/bgImg.png) no-repeat left top;
+	background-size: 100% 100%;
+	padding: 10px 10%;
+	box-shadow: 5px 5px 20px 0px #101324;
+}
+.input-content{
+	width: 100%;
+    padding-top: 40px;
+    position: relative;
+}
+.input-content span{
+	position: absolute;
+    top: 50px;
+    left: 10px;
+    color: #fff;
+}
+.input-content input{
+	width: 100%;
+    height: 40px;
+    border: 1px solid rgba(255,255,255,0.55);
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0);
+    padding: 0 10px 0 60px;
+    color: #fff;
+}
+.input-content input:focus{
+	border: 1px solid rgba(255,255,255,1);
+}
+.operating-area{
+	overflow: hidden;
+    padding: 20px 0;
+    color: #fff;
+}
+.operating-area > div{
+	width:50%;
+	float:left;
+}
+.remember label{
+	color: #fff;
+}
+.ckbox input[type="checkbox"]:checked + label::after{
+	top:2px;
+}
+.forget{
+	text-align: right;
+}
+.forget span{
+	cursor: pointer;
+}
+.login-btn{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.login-btn .btn{
+	width: 50%;
+	background-color:#47ae53;
+	color: #fff;
+}
+.login-btn .btn i{
+	margin-right:5px;
+}
+
+
+
+.productName {
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+	display:none;
+}
+.logoImg {
+	float: left;
+	width: auto;
+	height: 100px;
+	padding: 15px 10px 15px 20px;
+}
+.logoImg img {
+	width: auto;
+	height: 100%;
+}
+.productNameText {
+	float: left;
+	padding-top: 18px;
+	color: #333;
+}
+.productNameText p {
+	margin-bottom: 0;
+}
+.ChineseName {
+	font-size: 30px;
+	margin-bottom: 0;
+}
+
+
+
+.bottomContent {
+	/* width: 100%;
+	padding-top: 6%; */
+	overflow: hidden;
+	background: url(../images/shuzongimg/signinBgImgNew.png) no-repeat;
+    background-size: 50%;
+    background-position: 10%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display:none;
+}
+.leftImg{
+	/* width: 58%;
+	padding-left: 8%;
+	float: left; */
+}
+.leftImg img{
+	/* width:100%; */
+	opacity: 0;
+}
+.rightForm {
+	/* width: 42%;
+	float: left;
+	padding-left: 10%; */
+	position: absolute;
+    top: 50%;
+    right: 10%;
+    margin-top: -190px;
+}
+.signinForm {
+	width: 280px;
+	height: 385px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.loginTitle {
+	padding: 35px 0 30px 0;
+	font-size: 24px;
+	color: #666;
+	text-align: center;
+}
+.signinForm .inputDiv{
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.inputDiv span {
+	display: inline-block;
+	width: 55px;
+	height: 34px;
+	padding-left: 25px;
+	padding-top: 5px;
+	float: left;
+}
+.inputDiv .fa {
+	font-size: 24px;
+	color: #3276b1;
+}
+.inputDiv input {
+	width: 200px;
+	height: 34px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	float: left;
+	padding: 0 10px;
+	color: #333;
+}
+.userName, .passwordNum {
+	/* margin-bottom: 20px;
+	overflow: hidden; */
+}
+.rememberMe-div {
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding-left: 25px;
+}
+.rememberMe-div span {
+	display: inline;
+	width: 100%;
+	height: 10px;
+	padding-left: 10px;
+	padding-top: 3px;
+	float: none;
+}
+.submitBtn {
+	padding: 20px 20px 0 20px;
+	text-align: center;
+}
+.submitBtn button {
+	width: 100%;
+	height: 35px;
+	background-color: #3276b1;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	border-radius: 4px;
+	word-spacing: 1em;
+}
+.tishiBtn {
+	display: none;
+}
+.modal-custom-title {
+	font-size: 16px !important;
+}
+.modal-custom-close {
+	position: relative;
+	top: -5px;
+}
+
+
+/* ------------------------------------------ */
+#registrationApplication, #registrationCodeVerification{
+	display:none;
+}
+
+.switchDiv{
+	padding: 15px 0;
+    text-align: center;
+}
+.splitLine{
+	padding: 0 15px;
+}
+.switchBtn{
+	cursor: pointer;
+}
+.switchBtn:hover{
+	color:#3276b1;
+}
+.formDiv{
+	width: 320px;
+	min-height: 385px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.registrationApplicationTitle{
+	padding: 15px 0;
+	font-size: 24px;
+	color: #666;
+	text-align: center;
+	margin-bottom:0;
+}
+.formDiv .inputDiv{
+	margin-bottom:10px;
+	overflow: hidden;
+}
+.inputDiv .leftName{
+	width: 100px;
+    padding-right: 20px;
+    padding-left: 0;
+    text-align: right;
+}
+.selectDiv{
+	width: 200px;
+	height: 34px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	float: left;
+	padding: 0 6px;
+	color: #333;
+}
+.applyDiv, .verificationDiv{
+	padding: 10px 20px 0 20px;
+}
+.applyBtn, .verificationBtn{
+	width: 100%;
+    height: 35px;
+    background-color: #3276b1;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    word-spacing: 1em;
+}
+/* ----------------------------------------- */
+.registrationCodeVerificationTitle{
+	padding: 45px 0 30px 0;
+	font-size: 24px;
+	color: #666;
+	text-align: center;
+}
+.textareaDiv{
+	width: 200px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	float: left;
+	padding: 6px;
+	color: #333;
+	resize:none;
+}
+.verificationDiv{
+	margin-top:30px;
+}

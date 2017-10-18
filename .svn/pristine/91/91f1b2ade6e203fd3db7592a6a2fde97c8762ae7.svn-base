@@ -1,0 +1,299 @@
+.echartsBar{
+	padding: 80px 20px 0px 10px;
+}
+/*图形的主要区域*/
+.imgContent{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/*图形显示区域*/
+.drawing{
+	width: 100%;
+	height: 100%;
+	padding-left: 50px;
+	padding-bottom: 30px;
+}
+/*图形的xy轴和辅助线区域*/
+.drawingBg{
+	width: 100%;
+	height: 100%;
+	border-left: 1px solid rgba(72,173,189,0.2);
+	border-right: 1px solid rgba(72,173,189,0.2);
+	border-bottom: 1px solid rgba(72,173,189,0.2);
+	position: relative;
+}
+/*Y轴辅助线*/
+.yAxisGuide{
+	width:100%;
+	height: 100%;
+}
+.yAxisGuide i{
+	width: 100%;
+	height: 20%;
+	display: block;
+	border-top: 1px solid rgba(72,173,189,0.2);
+}
+/*X轴辅助线*/
+.xAxisGuide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.bar{
+	width: 20%;
+	height: 100%;
+	float: left;
+	/*border-right: 1px solid #fff;*/
+	position: relative;
+}
+.bar:hover{
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.1);
+}
+.barImg{
+	width: 40%;
+	/*height: 25%;*/
+	margin: 0 30%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	cursor: pointer;
+	background: url("../images/barBg2.png") repeat-y top left;
+}
+.height0{
+	height: 23%;
+}
+.height1{
+	height: 75%;
+}
+.height2{
+	height: 92%;
+}
+.height3{
+	height: 57%;
+}
+.height4{
+	height: 45%;
+}
+.barImg span{
+	min-width: 100%;
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: 0px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: #2e3c42;
+    border-radius: 4px;
+    padding: 0 5px;
+}
+/*Y轴区域*/
+.yAxis{
+	position: absolute;
+	top: 0;
+	bottom: 30px;
+	left: 0;
+	width: 50px;
+}
+.yAxisName{
+	position: absolute;
+	top: -30px;
+	left: 0;
+	font-size: 14px;
+	color: #5d858d;
+	width: 100px;
+}
+.yNum{
+	width: 40px;
+	height: 100%;
+	float: left;
+	color: #fff;
+    font-size: 14px;
+    /*padding-right: 5px;*/
+}
+.yNum span{
+	width: 100%;
+	height: 20%;
+	display: block;
+	text-align: right;
+	color: #5d858d;
+    font-size: 14px;
+    line-height: 2px;
+}
+.yScale{
+	width: 10px;
+	height: 100%;
+	float: left;
+}
+.yScale i{
+	width: 100%;
+	height: 20%;
+	display: block;
+	border-top: 1px solid #fff;
+}
+/*Y轴零刻度*/
+.yZero{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+}
+.yZero span{
+	width: 40px;
+	float: left;
+	margin-top: -8px;
+    text-align: right;
+    color: #5d858d;
+    font-size: 14px;
+    /*padding-right: 5px;*/
+}
+.yZero i{
+	width: 10px;
+	float: left;
+	border-top: 1px solid #fff;
+}
+/*X轴区域*/
+.xAxis{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	padding-left: 50px;
+}
+.xAxisName{
+	position: absolute;
+	top: 0;
+	right: -60px;
+	font-size: 14px;
+	color: #5d858d;
+}
+.xScale{
+	width: 100%;
+	height: 5px;
+}
+.xScale i{
+	/*width: 20%;*/
+	height: 100%;
+	float: left;
+	border-right: 1px solid #fff;
+}
+.xNum{
+	width: 100%;
+	height: 25px;
+}
+.xNum span{
+	/*width: 20%;*/
+	height: 100%;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	color: #5d858d;
+	display:block;
+   	white-space:nowrap; 
+  	overflow:hidden; 
+  	text-overflow:ellipsis;
+}
+/*X轴零刻度*/
+.xZero{
+	position: absolute;
+	top: 0;
+	left: 50px;
+	width: 1px;
+	height: 5px;
+}
+.xZero i{
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-right: 1px solid #fff;
+}
+/*图例区域*/
+.legend{
+	position: absolute;
+	top: 50%;
+	right: -100px;
+	width: 80px;
+	margin-top: -140px;
+}
+.legendModular{
+	width: 100%;
+	height: 60px;
+	padding-top: 10px;
+	cursor: pointer;
+}
+.legendModular:hover{
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 4px;
+}
+.legendModular i{
+	width: 10px;
+	height: 10px;
+	display: block;
+	border-radius: 5px;
+	margin: 0 auto;
+	-moz-box-shadow: 0px 0px 15px #fff;
+	-webkit-box-shadow: 0px 0px 15px #fff;
+	box-shadow: 0px 0px 15px #fff;
+}
+.bgColor1 i{
+	background-color: #c34afc; /*67dc42*/
+}
+.bgColor2 i{
+	background-color: #56baca;
+}
+.bgColor3 i{
+	background-color: #59c766;
+}
+.legendModular span{
+	width: 100%;
+	height: 30px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #fff;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+/*提示框区域*/
+.promptBox{
+	padding: 10px;
+	border-radius: 4px;
+	background-color: rgba(0,0,0,0.6);
+	position: absolute;
+	display: none;
+	width: auto;
+	min-height: 40px;
+}
+.promptBox p{
+	font-size: 14px;
+	color:#fff;
+	margin-bottom: 0;
+	height: 20px;
+	line-height: 20px;
+}
+
+/*-------------------------不同分辨率屏幕的样式处理--start---------------------------*/
+/*min-width < screen  屏幕宽度大于min-width*/  
+@media screen and (min-width: 1921px) { 
+    
+}
+
+/*min-width < max-width 屏幕宽度大于min-width，小于max-width*/
+@media (min-width: 1367px) and (max-width: 1920px) { 
+    .echartsBar{
+		padding: 100px 20px 0px 10px;
+	}
+}
+
+/*screen < max-width  屏幕宽度小于max-width*/
+@media screen and (max-width: 960px) { 
+    
+}
+/*-------------------------不同分辨率屏幕的样式处理--end---------------------------*/

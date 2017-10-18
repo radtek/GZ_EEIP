@@ -1,0 +1,87 @@
+* {font-family: "Microsoft Yahei";}
+html,body{
+	background-color: rgba(86,186,202,0);
+	width: 100%;
+	height: 100%;
+}
+/*整个图形的区域*/
+.echarts{
+	width: 100%;
+	height: 100%;
+	/* border: 1px solid #56baca;
+	border-bottom: 3px solid #2bede6; */
+	overflow: hidden;
+}
+/*标题*/
+.titleContent{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+.title{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	z-index: 5;
+}
+.titleGradientLine{
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 1;
+	margin-top: -1px;
+	background-color: #56baca;
+	background: -webkit-linear-gradient(left, rgba(86,186,202,0) 0%, rgba(86,186,202,0) 4%, rgba(86,186,202,1) 4.1%, rgba(86,186,202,0) 30%, rgba(86,186,202,0) 70%, rgba(86,186,202,1) 95.9%, rgba(86,186,202,0) 96%, rgba(86,186,202,0) 100%);
+    background: -o-linear-gradient(right, rgba(86,186,202,0) 0%, rgba(86,186,202,0) 4%, rgba(86,186,202,1) 4.1%, rgba(86,186,202,0) 30%, rgba(86,186,202,0) 70%, rgba(86,186,202,1) 95.9%, rgba(86,186,202,0) 96%, rgba(86,186,202,0) 100%);
+    background: -moz-linear-gradient(right, rgba(86,186,202,0) 0%, rgba(86,186,202,0) 4%, rgba(86,186,202,1) 4.1%, rgba(86,186,202,0) 30%, rgba(86,186,202,0) 70%, rgba(86,186,202,1) 95.9%, rgba(86,186,202,0) 96%, rgba(86,186,202,0) 100%);
+    background: linear-gradient(to right, rgba(86,186,202,0) 0%, rgba(86,186,202,0) 4%, rgba(86,186,202,1) 4.1%, rgba(86,186,202,0) 30%, rgba(86,186,202,0) 70%, rgba(86,186,202,1) 95.9%, rgba(86,186,202,0) 96%, rgba(86,186,202,0) 100%);
+}
+.titlebrightenedDot{
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	margin-top: -5px;
+	background-color: #56baca;
+	box-shadow: 0px 0px 30px 20px rgba(161, 238, 250, 0.25);
+}
+.brightenedDotLeft{
+	left: 3.5%;
+}
+.brightenedDotRight{
+	right: 3.5%;
+}
+
+/*-------------------------不同分辨率屏幕的样式处理--start---------------------------*/
+/*min-width < screen  屏幕宽度大于min-width*/  
+@media screen and (min-width: 1921px) { 
+    
+}
+
+/*min-width < max-width 屏幕宽度大于min-width，小于max-width*/
+@media (min-width: 1367px) and (max-width: 1920px) { 
+    .titleContent{
+		height: 70px;
+		line-height: 70px;
+		font-size: 20px;
+	}
+}
+
+/*screen < max-width  屏幕宽度小于max-width*/
+@media screen and (max-width: 960px) { 
+    
+}
+/*-------------------------不同分辨率屏幕的样式处理--end---------------------------*/

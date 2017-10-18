@@ -1,0 +1,86 @@
+#系统管理
+TYPE1=[NAME=\u7cfb\u7edf\u7ba1\u7406],[LABEL=PLATFORM_MGT]
+#物证管理
+TYPE2=[NAME=\u7269\u8bc1\u7ba1\u7406],[LABEL=EVID_MGT]
+#设备管理
+TYPE3=[NAME=\u8bbe\u5907\u7ba1\u7406],[LABEL=EQPT_MGT]
+#环境管理
+TYPE4=[NAME=\u73af\u5883\u7ba1\u7406],[LABEL=ENV_MGT]
+#人员信息
+TYPE5=[NAME=\u4eba\u5458\u4fe1\u606f\u7ba1\u7406],[LABEL=PSNL_INFO_MGT]
+#会议管理
+TYPE6=[NAME=\u4f1a\u8bae\u7ba1\u7406],[LABEL=MEETING_MGT]
+#知识管理
+TYPE7=[NAME=\u77e5\u8bc6\u7ba1\u7406],[LABEL=KNOWLEDGE_MGT]
+#统计分析
+TYPE8=[NAME=\u7edf\u8ba1\u5206\u6790],[LABEL=ANALYSIS_MGT]
+#流程管理
+TYPE9=[NAME=\u6d41\u7a0b\u7ba1\u7406],[LABEL=FLOW_MGT]
+
+#平台管理--------------------------------------------------------------------------------
+ #机构管理
+TYPE10=[NAME=\u7ec4\u7ec7\u67b6\u6784],[LABEL=ORG_MGT],[PARENT=PLATFORM_MGT]
+ #用户管理
+TYPE11=[NAME=\u7528\u6237\u7ba1\u7406],[LABEL=USER_MGT],[PARENT=PLATFORM_MGT]
+ #权限管理
+TYPE12=[NAME=\u6743\u9650\u7ba1\u7406],[LABEL=ROLE_AUTH_MGT],[PARENT=PLATFORM_MGT]
+ #消息管理
+TYPE13=[NAME=\u6d88\u606f\u7ba1\u7406],[LABEL=NOTIFICATION_MGT],[PARENT=PLATFORM_MGT]
+ #日志管理
+TYPE14=[NAME=\u65e5\u5fd7\u7ba1\u7406],[LABEL=LOG_MGT],[PARENT=PLATFORM_MGT]
+
+#物证管理--------------------------------------------------------------------------------
+ #物证库
+TYPE15=[NAME=\u7269\u8bc1\u5e93],[LABEL=EVID_LIB],[PARENT=EVID_MGT]
+ #物证预检
+TYPE16=[NAME=\u7269\u8bc1\u9884\u68c0],[LABEL=PREAPPRAISAL_MGT],[PARENT=EVID_MGT]
+ #物证鉴定
+TYPE17=[NAME=\u7269\u8bc1\u9274\u5b9a],[LABEL=APPRAISAL_MGT],[PARENT=EVID_MGT]
+ #现场勘验
+TYPE18=[NAME=\u73b0\u573a\u52d8\u9a8c],[LABEL=INQUEST_MGT],[PARENT=EVID_MGT]
+
+#设备管理--------------------------------------------------------------------------------
+ #设备信息
+TYPE19=[NAME=\u8bbe\u5907\u4fe1\u606f],[LABEL=EQPT_INFO_MGT],[PARENT=EQPT_MGT]
+ #设备维护
+TYPE20=[NAME=\u8bbe\u5907\u7ef4\u62a4],[LABEL=EQPT_MAINTENANCE],[PARENT=EQPT_MGT]
+ #设备借用
+TYPE21=[NAME=\u8bbe\u5907\u501f\u7528],[LABEL=EQPT_BORROWING],[PARENT=EQPT_MGT]
+
+#环境管理--------------------------------------------------------------------------------
+ #环境监控
+TYPE22=[NAME=\u73af\u5883\u76d1\u63a7],[LABEL=TH_DASHBOARD],[PARENT=ENV_MGT]
+ #监控日志
+TYPE23=[NAME=\u76d1\u63a7\u65e5\u5fd7],[LABEL=TH_MONITORING_LOG],[PARENT=ENV_MGT]
+
+#人员信息--------------------------------------------------------------------------------
+ #专家库
+TYPE24=[NAME=\u4e13\u5bb6\u5e93],[LABEL=APPRAISER_LIB],[PARENT=PSNL_INFO_MGT]
+ #来访人员
+TYPE25=[NAME=\u6765\u8bbf\u4eba\u5458],[LABEL=VISITOR_MGT],[PARENT=PSNL_INFO_MGT]
+ #培训计划
+TYPE26=[NAME=\u57f9\u8bad\u8ba1\u5212],[LABEL=TRAINING_PLAN_MGT],[PARENT=PSNL_INFO_MGT]
+
+#会议管理--------------------------------------------------------------------------------
+ #会议室管理
+TYPE27=[NAME=\u4f1a\u8bae\u5ba4\u7ba1\u7406],[LABEL=MEETING_ROOM_MGT],[PARENT=MEETING_MGT]
+ #会议申请
+TYPE28=[NAME=\u4f1a\u8bae\u7533\u8bf7],[LABEL=MEETING_APP_MGT],[PARENT=MEETING_MGT]
+ #计划申请
+TYPE29=[NAME=\u8ba1\u5212\u7533\u8bf7],[LABEL=PLAN_APP_MGT],[PARENT=MEETING_MGT]
+
+#知识管理--------------------------------------------------------------------------------
+ #知识库
+TYPE30=[NAME=\u77e5\u8bc6\u5e93],[LABEL=KNOWLEDGE_LIB],[PARENT=KNOWLEDGE_MGT]
+ #文档维护
+TYPE31=[NAME=\u6587\u6863\u7ef4\u62a4],[LABEL=DOC_MAINTENANCE],[PARENT=KNOWLEDGE_MGT]
+
+#统计分析--------------------------------------------------------------------------------
+#统计分析管理
+TYPE34=[NAME=\u7edf\u8ba1\u5206\u6790\u7ba1\u7406],[LABEL=AANALYSIS_MGT],[PARENT=ANALYSIS_MGT]
+
+#流程管理--------------------------------------------------------------------------------
+ #流转管理
+TYPE32=[NAME=\u6d41\u8f6c\u7ba1\u7406],[LABEL=PROCESS_MGT],[PARENT=FLOW_MGT]
+ #表单管理
+TYPE33=[NAME=\u8868\u5355\u7ba1\u7406],[LABEL=FORM_MGT],[PARENT=FLOW_MGT]

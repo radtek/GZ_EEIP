@@ -1,0 +1,105 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+		                   http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd" 
+	    version="2.0">
+  
+	<description><![CDATA[ For Basic Platform's Authorities ]]></description>
+	<display-name>popedom</display-name>
+	<tlib-version>1.0</tlib-version>
+	<short-name>auth</short-name>
+	<uri>http://www.pangolin.org/auth</uri>
+	
+	<tag>
+	   <name>auth</name>
+	   <tag-class>org.pangolin.eeip.web.tag.AuthorityTag</tag-class>
+	   <body-content>JSP</body-content>
+	   <description>Authority Tag</description>
+	   <!-- attributes -->
+	   <attribute>
+	      <name>username</name>
+	      <required>true</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>grant</name>
+	      <required>true</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>disable</name>
+	      <required>false</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	</tag>
+	
+	<tag>
+	   <name>adv-auth</name>
+	   <tag-class>org.pangolin.eeip.web.tag.AdvancedAuthorityTag</tag-class>
+	   <body-content>JSP</body-content>
+	   <description>Advanced Authority Tag</description>
+	   <!-- attributes -->
+	   <attribute>
+	      <name>username</name>
+	      <required>true</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>grants</name>
+	      <required>true</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>condition</name>
+	      <required>true</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>disable</name>
+	      <required>false</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	</tag>
+	
+	<tag>
+	   <name>sup-auth</name>
+	   <tag-class>org.pangolin.eeip.web.tag.SupervisorTag</tag-class>
+	   <body-content>JSP</body-content>
+	   <description>Supervisor Authority Tag</description>
+	   <!-- attributes -->
+	   <attribute>
+	      <name>username</name>
+	      <required>true</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>disable</name>
+	      <required>false</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	</tag>
+	
+	<tag>
+	   <name>role-auth</name>
+	   <tag-class>org.pangolin.eeip.web.tag.RoleAuthorityTag</tag-class>
+	   <body-content>JSP</body-content>
+	   <description>Role Authority Tag</description>
+	   <!-- attributes -->
+	   <attribute>
+	      <name>username</name>
+	      <required>true</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>role</name>
+	      <required>true</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	   <attribute>
+	      <name>disable</name>
+	      <required>false</required>
+	      <rtexprvalue>true</rtexprvalue>
+	   </attribute>
+	</tag>
+	
+</taglib>

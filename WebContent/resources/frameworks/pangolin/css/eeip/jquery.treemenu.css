@@ -1,0 +1,102 @@
+/* For treemenu.js */
+.treemenu li { list-style: none; }
+
+.treemenu .toggler1,.treemenu .toggler2,.treemenu .toggler3 {
+    cursor: pointer;
+}
+
+.treemenu .toggler1:before,.treemenu .toggler2:before {
+    display: inline-block;
+    margin-right: 2pt;
+}
+
+li.tree-empty1 > .toggler1,li.tree-empty2 > .toggler2 { 
+	color: #666; 
+}
+li.tree-empty1 > .toggler1:before,li.tree-empty2 > .toggler2:before { 
+	content: ""; 
+}
+li.tree-closed1 > .toggler1:before,li.tree-closed2 > .toggler2:before { 
+	content: "+"; 
+}
+li.tree-opened1 > .toggler1:before ,li.tree-opened2 > .toggler2:before{
+	content: "\2212"; 
+}
+.tree {  
+	color:#333;
+	width:100%;
+	padding-right:10px;
+	margin-bottom:0;
+}
+.tree li{
+	padding: 5px 0px 5px 20px;
+    border-radius: 4px;
+}
+.tree li > a{
+	padding:3px 5px;
+    margin:5px 0 5px 20px;
+    border-radius: 4px;
+}
+.tree li > span {
+	padding: 5px;
+    border-radius: 4px;
+    display:block;
+}
+
+.tree li a {
+   color:#333;
+    text-decoration: none;
+    line-height: 20pt;
+    border-radius: 4px;
+}
+
+.toggler1:hover ,.toggler2:hover ,.toggler3:hover{
+    background-color: #34BC9D;
+    color: #fff;
+}
+
+.active {
+    background-color: #34495E;
+    color: white;
+}
+
+.active a {
+    color: #fff;
+}
+
+.tree li a.active:hover {
+    background-color: #34BC9D;
+}
+.enter-search{
+	padding-top:200px;
+	text-align:center;
+}
+.file-iframe{
+	display:none;
+	border: none;
+	width:100%;
+	min-height:500px;
+	padding-left:10px;
+}
+.enter-search input{
+	width:60%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+
+.main-content{
+	min-height:500px;
+}
+.left-content{
+	height:100%;
+	border-right:1px solid #e5e5e5;
+}
+.right-form{
+	height:100%;	
+}
+.btn-color2{
+	margin-top:-3px;
+	height:50px;
+}

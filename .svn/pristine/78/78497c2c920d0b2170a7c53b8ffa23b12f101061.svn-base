@@ -1,0 +1,106 @@
+.btn-list{
+	margin: 5px 10px;
+	padding: 0;
+	overflow: hidden;
+}
+.btn-list li{
+	width: 25%;
+	height: 80px;
+	float: left;
+	padding: 0 10px;
+}
+.btn-list li a{
+	width: 100%;
+	min-width: 225px;
+	height: 100%;
+	display: block;
+	background-color: #8191a1;
+	overflow: hidden;
+}
+.btn-list li .btn-bg03{
+	background-color: #42ae56;
+}
+.btn-list li .btn-bg04{
+	background-color: #e94c4c;
+}
+.btn-list li .btn-bg05{
+	background-color: #9797d7;
+}
+.icons{
+	width: 60px;
+	height: 80px;
+	display: block;
+	float: left;
+	margin: 0 10px;
+}
+.icons-01{
+	background: url(../images/icons.png) no-repeat left 10px;
+}
+.icons-02{
+	background: url(../images/icons.png) no-repeat left 10px;
+}
+.icons-03{
+	background: url(../images/icons.png) no-repeat -65px 10px;
+}
+.icons-04{
+	background: url(../images/icons.png) no-repeat -130px 10px;
+}
+.icons-05{
+	background: url(../images/icons.png) no-repeat -195px 10px;
+}
+.icons-06{
+	background: url(../images/icons.png) no-repeat -260px 10px;
+}
+.text{
+	float: left;
+	color: #fff;
+	font-size: 18px;
+	height: 80px;
+	padding: 20px 0;
+}
+.text p{
+	margin-bottom: 0;
+}
+.text p:last-child{
+	font-size: 16px;
+}
+.num{
+	height: 80px;
+	line-height: 80px;
+	font-size: 36px;
+	color: #fff;
+	padding-right: 10px;
+	float: right;
+}
+
+
+.bottom-content{
+	position: absolute;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 25px;
+    top: 90px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.chart{
+	width: 75%;
+	height:100%;
+	float: left;
+	padding: 0 10px;
+}
+.chart-top{
+	width: 100%;
+	min-height: 200px;
+	height:49%;
+	border: 1px solid #ccc;
+	margin-bottom: 1%;
+}
+.chart-bottom{
+	width: 100%;
+	min-height: 200px;
+	height:49%;
+	margin-top:1%;
+	border: 1px solid #ccc;
+}

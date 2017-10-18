@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-size: 13px;
+	background: url(../../images/login/bg_02.jpg) repeat-x 0 0 #dfeaf2;
+}
+
+.login {
+	width: 1089px;
+	margin: 32px auto 0px auto;
+}
+
+.login_win {
+	background: url(../../images/login/bg_07.jpg) no-repeat 0 0;
+	padding: 35px 110px;
+	width: 869px;
+	height: 96px;
+}
+
+.login_win div {
+	float: left;
+}
+
+.user_w {
+	width: 340px;
+}
+
+.user {
+	margin-left: 10px;
+	height: 43px;
+	line-height: 43px;
+	width: 310px;
+	padding-left: 10px;
+	border: 1px solid #d6d6d7;
+	background: url(../../images/login/icon_13.jpg) no-repeat 285px 13px #FFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #6F6F6F;
+	font-family:"Microsoft YaHei", "微软雅黑", Arial, Helvetica, sans-serif, STXihei, "华文细黑";
+}
+
+.key {
+	margin-left: 10px;
+	height: 43px;
+	line-height: 43px;
+	width: 310px;
+	padding-left: 10px;
+	border: 1px solid #d6d6d7;
+	background: url(../../images/login/icon_15.jpg) no-repeat 285px 13px #FFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #6F6F6F;
+	font-family:"Microsoft YaHei", "微软雅黑", Arial, Helvetica, sans-serif, STXihei, "华文细黑";
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+	transition: border linear .2s, box-shadow linear .5s;
+	-moz-transition: border linear .2s, -moz-box-shadow linear .5s;
+	-webkit-transition: border linear .2s, -webkit-box-shadow linear .5s;
+	outline: none;
+	border-color: rgba(21, 127, 204, .75);
+	box-shadow: 0 0 8px rgba(21, 127, 204, .5);
+	-moz-box-shadow: 0 0 8px rgba(21, 127, 204, .5);
+	-webkit-box-shadow: 0 0 8px rgba(21, 127, 204, 3);
+}
+
+.icon {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.btn_w {
+	width: 180px;
+	text-align: right;
+}
+
+.btn {
+	background: url(../../images/login/icon_09.jpg) no-repeat 0 0;
+	width: 170px;
+	height: 45px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}

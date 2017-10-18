@@ -1,0 +1,132 @@
+* {margin: 0px;padding: 0px;font-family: "Microsoft Yahei";color: #fff;}
+body {
+    background-color: #1d2939;
+    font: 12px/ 1.5 Microsoft YaHei, Helvitica, Verdana, Arial, san-serif;
+    padding: 0;
+    margin: 0;
+}
+/* @media (min-width: 540px) {
+    body {
+        font: 13px/ 1.5 Microsoft YaHei, Helvitica, Verdana, Arial, san-serif;
+    }
+}
+@media (min-width: 768px) {
+    body {
+        font: 15px/ 1.5 Microsoft YaHei, Helvitica, Verdana, Arial, san-serif;
+    }
+}
+@media (min-width: 992px) {
+    body {
+        font: 24px/ 1.5 Microsoft YaHei, Helvitica, Verdana, Arial, san-serif;
+    }
+}
+@media (min-width: 1200px) {
+    body {
+        font: 40px/ 1.5 Microsoft YaHei, Helvitica, Verdana, Arial, san-serif;
+    }
+} */
+.topContent{
+    width: 100%;
+    height:80px;
+    overflow: hidden;
+}
+.imgDiv{
+    width: 110px;
+    height: 80px;
+    padding: 5px 20px;
+    float: left;
+}
+.imgDiv img{
+    width: 100%;
+}
+.text{
+    height: 80px;
+    line-height: 80px;
+    float: left;
+    font-size: 28px;
+}
+.timeDiv{
+    float: right;
+    width: 260px;
+    height: 80px;
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+.timeDiv div{
+    height: 30px;
+    line-height: 30px;
+}
+.loading{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    width: 120px;
+    height: 40px;
+    margin-left: -60px;
+    margin-top: -20px;
+    z-index: 20;
+    font-size: 20px;
+    text-align: center;
+}
+.infoDiv{
+    position: fixed;
+    top: 0;
+    right: 260px;
+    z-index: 30;
+    height: 80px;
+    line-height: 80px;
+    font-size: 20px;
+}
+.infoDiv marquee{
+    width: 100%;
+}
+.typeDiv{
+    display: none;
+}
+.mainContent{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+.mainContent > div{
+	/* width: 100%;
+    height: 100%; */
+}
+.browseDiv{
+	/* display:none; */
+}
+.mainContent > div > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* opacity: 0; */
+    font-size: 0;
+}
+.mainContent .browseDiv div{
+	opacity: 0;
+}
+.mainContent > div.action{
+    z-index: 10 !important;
+    opacity: 1 !important;
+}
+.mainContent > div > div{
+    border: 1px solid #304055;
+}
+.mainContent > div iframe{
+    width: 100%;
+    height: 100%;
+}
+.height50{
+    height: 50%;
+    padding: 15px;
+}
+.height100{
+    height: 100%;
+    padding: 15px;
+}

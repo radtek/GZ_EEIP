@@ -1,0 +1,41 @@
+$(function(){		
+	//表单提交
+	$(".handleData").on("click",".singleModify",function(){	
+		$(this).parent().parent().find("input").attr("readonly",false).css("background-color","#fff");
+		$(this).addClass("singleSubmit");
+		$(this).attr("title","保存")
+		$(this).children().removeClass("fa-pencil-square-o").addClass("fa-check");
+		$(this).removeClass("singleModify");
+	});
+	//表单修改	
+	$(".handleData").on("click",".singleSubmit",function(){	
+		var num = 0;
+		$(this).parent().parent().find("input").each(function(index,data){			
+			if(!this["value"]){				
+				if(this["required"]){
+					num++;
+					$(this).addClass("error");		
+				}										
+			}
+		})
+		if(num == 0){
+			$(this).parent().parent().find("input").attr("readonly",true).css("background-color","#f9f9f9");
+			$(this).addClass("singleModify");
+			$(this).attr("title","修改")
+			$(this).children().removeClass("fa-check").addClass("fa-pencil-square-o");
+			$(this).removeClass("singleSubmit");
+		}		
+	});
+	//表单删除	
+	$(".handleData").on("click",".singleClear",function(){		
+		$(this).parent().parent().remove();		
+	});
+	//失去焦点
+	$(".handleData").on("blur","input",function(){			
+		if ($(this).val()){	
+			$(this).removeClass("error");			
+		}else{
+			$(this).addClass("error");
+		}	
+	});
+})

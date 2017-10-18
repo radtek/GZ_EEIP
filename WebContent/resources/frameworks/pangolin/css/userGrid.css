@@ -1,0 +1,55 @@
+.select_top {
+	position: relative;
+}
+
+.select_content {
+	margin: 5px 0;
+	width: 100%;
+	min-height: 1px;
+}
+
+.user_left {
+	width: 20%;
+	float: left;
+	margin-top: 5px;
+	/* border-right: 1px solid #e4e7ea; */
+	/* padding-left: 20px; */
+	padding-right: 5px;
+}
+
+.user_right {
+	width: 80%;
+	float: right;
+}
+
+.sansan {
+	float: left;
+	width: 33%;
+}
+
+.tree {
+	width: 100%;
+	background-color: #fff;
+}
+
+.tree tr {
+	height: 30px;
+}
+
+.tree tr td {
+	padding: 0 10px;
+}
+
+.selected_item {
+	background-color: #555;
+	color: #FFF;
+	border-radius: 3px;
+}
+
+.new_tips {
+	color: #E07470;
+}
+
+#search_btn {
+	cursor: pointer;
+}

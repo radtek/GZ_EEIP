@@ -1,0 +1,60 @@
+.navbar {
+	margin-bottom: 0;
+	min-height: 40px;
+}
+
+.navbarStyle1 {
+	width:100%;
+}
+
+.form-group {
+	margin-bottom: 0;
+}
+
+.navbar-form {
+	margin: 0;
+	padding: 0;
+}
+
+.form-bordered .form-group:first-child {
+	border-top: none;
+}
+
+.navbar-form .form-group {
+	padding: 0;
+	width: 100%;
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width:100%;
+}
+
+.width80 {
+	width: 80%;
+	float: left;
+}
+
+.spanText {
+	line-height: 34px;
+	padding-left: 5px;
+}
+
+.timeText {
+	line-height: 34px;
+	text-align: center;
+}
+
+.form-bordered>.formTextarea {
+	padding: 20px;
+}
+
+.inputBtn {
+	line-height: 34px;
+}
+
+.date-ctrl-excursion {
+	/* position: relative;
+	left: -9px; */
+}
+.date-ctrl-excursion .col-sm-8{
+	padding:0;
+}

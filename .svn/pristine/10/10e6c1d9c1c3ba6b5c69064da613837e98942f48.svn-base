@@ -1,0 +1,239 @@
+* {font-family: "Microsoft Yahei";}
+html,body{
+	background-color: rgba(86,186,202,0);
+	width: 100%;
+	height: 100%;
+}
+.echarts{
+	width: 100%;
+	height: 100%;
+}
+.echartsTable{
+	padding-right: 300px;
+	position: relative;
+}
+.leftTable{
+	width: 100%;
+	height: 100%;
+	background: url("../images/leftCrewel.png") no-repeat top left, url("../images/rightCrewel.png") no-repeat top right;
+	background-size: contain;
+	padding: 80px 80px;
+	position: relative;
+}
+.tableBgShine{
+	position: absolute;
+	top: 78px;
+	left: 10%;
+	width: 80%;
+	height: 5px;
+	border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 6px 4px rgba(130, 111, 208, 0.6);
+}
+.tableContent{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #6ecfdf;
+	background-color: rgba(86,186,202,0.1);
+	padding-top: 80px;
+	padding-right: 8px;
+	position: relative;
+}
+.tableTop{
+	width: 100%;
+	height: 60px;
+	padding: 0 20px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.title{
+	height: 100%;
+	line-height: 60px;
+	float: left;
+	color: #50bfcd;
+	font-size: 18px;
+}
+.selectDiv{
+	float: right;
+	width: 120px;
+	height: 36px;
+	overflow: hidden;
+	position: relative;
+	margin-top: 12px;
+	border: 1px solid #4bbbca;
+	border-radius: 2px;
+}
+.bottomArrow{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	z-index: 1;
+	width: 10px;
+	height: 10px;
+	margin-top: -6px;
+	border-left: 1px solid #4bbbca;
+	border-bottom: 1px solid #4bbbca;
+	display: block;
+	-moz-transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);  
+	-ms-transform:rotate(-45deg); 
+	transform:rotate(-45deg); 
+}
+.timeSelect{
+	z-index: 2;
+	width: 150px;
+	height: 34px;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	color: #a8e6e7;
+	font-size: 16px;
+	padding-left: 5px;
+}
+.timeSelect option{
+	color: #333;
+}
+.tableDiv{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	color: #4abbc9;
+	padding-right: 8px
+}
+.tableDiv::-webkit-scrollbar{
+	width:4px;
+	height:20px;
+	background-color:rgba(0,0,0,0);
+}
+.tableDiv::-webkit-scrollbar-thumb{
+	background-color:#006a83;
+	border-radius:2px;
+}
+.table{
+	margin-bottom: 0;
+	background-color:rgba(0,0,0,0);
+}
+.table thead{
+	position: absolute;
+	top: 53px;
+	left: 0;
+	width: 100%;
+	height: 28px;
+	padding-right: 20px;
+	border-bottom: 1px solid #2d2c3c;
+	border-top: 1px solid #2d2c3c;
+	background-color: rgba(86,186,202,0.05);
+}
+.table thead tr{
+	width: 100%;
+    display: block;
+}
+.table thead tr th{ 
+	width:20% !important;
+	float: left;
+	text-align: center;
+	border-bottom: none;
+	font-weight: normal;
+	padding: 4px 0;
+	background-color: rgba(0,0,0,0);
+	color:#5d858d;
+    font-family: "Microsoft Yahei";
+}
+.table tbody{
+	padding-right: 8px;
+	border-right: 1px solid #2d2c3c;
+	border-bottom: 1px solid #2d2c3c;
+}
+.table tbody tr td{ 
+	width:20%;
+	text-align: center;
+	border-top: 1px solid #2d2c3c;
+	padding: 15px 0;
+}
+.table tbody tr:nth-child(2n-1){
+	background-color: rgba(0,0,0,0.2);
+}
+.rightUl{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	padding: 0 40px;
+}
+.rightUl li{
+	width: 100%;
+	height: 25%;
+	list-style-type: none;
+	border-bottom: 1px solid #003e46;
+	position: relative;
+}
+.rightUl li:first-child{
+	border-top: 1px solid #003e46;
+}
+.liBtn{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	margin-left: -50px;
+	margin-top: -50px;
+	line-height: 100px;
+	text-align: center;
+	color: #5dc9d7;
+	font-size: 16px;
+	cursor: pointer;
+}
+.liBtn .bigFont{
+	font-size:30px;
+	font-weight:bold;
+}
+.btnBg1{
+	background: url("../images/iconBg1.png") no-repeat top left;
+	background-size: 100%;
+}
+.btnBg2{
+	background: url("../images/iconBg2.png") no-repeat top left;
+	background-size: 100%;
+}
+.btnBg3{
+	background: url("../images/iconBg3.png") no-repeat top left;
+	background-size: 100%;
+}
+.btnBg4{
+	background: url("../images/iconBg4.png") no-repeat top left;
+	background-size: 100%;
+}
+.iconAndWord{
+	position: absolute;
+	top: 50%;
+	width:20px;
+	margin-top: -35px;
+	font-size:16px;
+	line-height:100%;
+	text-align:center;
+	color:rgb(91,199,212);
+}
+.iconAndWord>span{
+	display: inline-block;
+	width:10px;
+	height:10px;
+	border-radius:5px;
+	background-color:rgba(91,199,212,0.7);
+	box-shadow:0px 0px 8px rgb(91,199,212);
+}
+.iconAndWord .green{
+	background-color:rgba(51,173,110,0.7);
+	box-shadow:0px 0px 8px rgb(51,173,110);
+}
+.iconAndWord .yellow{
+	background-color:rgba(253,240,1,0.7);
+	box-shadow:0px 0px 8px rgb(253,240,1);
+}
+.iconAndWord .red{
+	background-color:rgba(228,0,22,0.7);
+	box-shadow:0px 0px 8px rgb(228,0,22);
+}

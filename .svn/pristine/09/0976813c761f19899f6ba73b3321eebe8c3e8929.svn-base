@@ -1,0 +1,8 @@
+#Hibernate Properties Configuration
+hibernate.show_sql=false
+hibernate.format_sql=false
+hibernate.hbm2ddl.auto=update
+hibernate.generate_statistics=false
+hibernate.max_fetch_depth=3
+hibernate.jdbc.batch_size=20
+hibernate.autoReconnect=true

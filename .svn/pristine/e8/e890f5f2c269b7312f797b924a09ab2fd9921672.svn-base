@@ -1,0 +1,2 @@
+#Web Service URL
+WORKFLOW_MGT_WS=http://localhost/workflow/services/processEngineWebService

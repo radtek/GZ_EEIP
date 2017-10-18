@@ -1,0 +1,4 @@
+#外部系统信息，包含：IP地址（域名）、Context Root、端口号
+
+#流程管理系统信息
+FM=[PROTOCOL=http],[IP_ADDR=localhost],[CONTEXT_ROOT=workflow],[PORT=80]

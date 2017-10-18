@@ -1,0 +1,153 @@
+.print-content{
+	position:relative;
+	width:649px;
+	height:978px;
+	margin:0 auto;
+	font-family:"SimSun";
+}
+.table tbody tr td,.table thead tr th{
+	text-align:center;
+	vertical-align:middle;
+	border:1px solid #000;
+	letter-spacing: 1px;
+}
+.table{
+	border-collapse: collapse;
+	border:2px solid #000;
+	margin-bottom:0;
+}
+.no-bor-bottom{
+	border-bottom:none;
+}
+.no-bor-bottom tbody tr td{
+	border-bottom:none;
+}
+.bor-top{
+	border-top:none;
+}
+.table p{
+	text-align:left;
+}
+.table .info{	
+	margin-bottom:30px;
+}
+.table .info span{
+	font-weight:700;
+}
+.table .mag{
+	margin:0 130px 0 30px;
+}
+.table-title{
+	text-align:center;
+	font-size:28px;
+	padding:20px 0;
+}
+.padding10{
+	padding:10px 0 0 0;
+}
+.let-spa10{
+	letter-spacing: 10px;
+}
+.let-spa2{
+	letter-spacing: 2px;
+}
+.let-spa0{
+	letter-spacing: 0;
+}
+.top-title{
+	border-bottom:1px solid #000;
+	font-size:12px;
+	padding-top:10px;
+}
+.on-top-padding{
+	padding-top:0;
+}
+.top-title .right{
+	float:right;
+}
+.table .width20{
+	width:20px;
+}
+.table .width50{
+	width:50px;
+}
+.table .width100{
+	width:100px;
+}
+.table .width80{
+	width:80px;
+}
+.table .width120{
+	width:120px;
+}
+.table .height50{
+	height:50px;
+}
+.table .width380{
+	width:380px;
+}
+.table .font-size18{
+	font-size:18px;
+	font-weight:bold;
+}
+.table .font-size22{
+	font-size:22px;
+	font-weight:bold;
+}
+.inform p span{
+	letter-spacing:0;
+}
+.inform p{
+	padding:10px 0;
+	margin:0;
+}
+.inform .line{
+	line-height:30px;
+}
+.inform .indent{
+	text-indent:2em;
+}
+.inform .mag{
+	margin-left:400px;
+}
+.dotted{
+	border-top:1px dotted #000;
+	margin-top:10px;
+}
+.wid-place{
+	display:inline-block;
+	width:24px;
+}
+.wid-place2{
+	display:inline-block;
+	width:110px;
+}
+.footer{
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+.mar-left-span span{
+	margin-left:20px;
+}
+.top-code{
+	text-align:right;
+	margin-right:20px;
+	margin-top:-6px;
+}
+.span-right-mag{
+	margin-right:15px;
+}
+.book-name{
+	margin:200px 0 400px 0;
+	text-align:center;
+	font-weight:bold;
+}
+.book-name h1{
+	font-size:50px;
+}
+.headstream{
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+}

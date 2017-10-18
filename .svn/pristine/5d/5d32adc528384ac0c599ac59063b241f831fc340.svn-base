@@ -1,0 +1,4 @@
+RSRC1=[NAME=Meeting Management URL],[LABEL=MEETING_MGT_URL],[URL=/foreground/**],[DESC='']
+RSRC2=[NAME=Equipment Management URL],[LABEL=EQPT_MGT_URL],[URL=/foreground/**],[DESC='']
+RSRC3=[NAME=Data Analysis URL],[LABEL=DATA_ANALYSIS_URL],[URL=/foreground/**],[DESC='']
+RSRC4=[NAME=System Management URL],[LABEL=SYS_MGT_URL],[URL=/systemManagement/**],[DESC='']

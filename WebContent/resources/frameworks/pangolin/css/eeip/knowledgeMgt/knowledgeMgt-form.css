@@ -1,0 +1,177 @@
+.main-content{
+    width: 100%;
+    position: relative;
+}
+/*-----------左侧栏-Start-----------*/
+.left-content{
+	width:280px;
+	position: absolute;
+    top: 0;
+    left: 0;
+}
+.title-name{
+	padding:10px 0;
+}
+.title-name p{
+	padding-left:10px;
+	border-left:3px solid #282e50;
+	font-size: 16px;
+	margin-bottom:0;
+}
+.search-area{
+	width:100%;
+	border:1px solid #ddd;
+	background-color: #fff;
+	height: 34px;
+	position: relative;
+}
+.select-content{
+	width:100px;
+	height:100%;
+	float:left;
+	border: none;
+}
+.input-content{
+	width: 150px;
+    height: 100%;
+    border: none;
+    border-left: 1px solid #ddd;
+    float: left;
+    padding-left: 5px;
+}
+.select-content:focus,
+.input-content:focus{
+	outline: none;
+}
+.icon-btn{
+	position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px 8px;
+    cursor: pointer;
+}
+.icon-btn i{
+	font-size: 18px;
+    color: #999;
+}
+.nav-list{
+	background-color: #fff;
+	margin-bottom:0;
+	margin-top:10px;
+	border:1px solid #ddd;
+	padding:5px;
+}
+.nav-list > li{
+	position: relative;
+}
+.nav-list > li > p{
+	margin-bottom:0;
+	/* font-size: 16px; */
+    line-height: 39px;
+    height: 40px;
+    border-bottom:1px solid #ddd;
+    padding: 0 30px 0 30px;
+    display:block;
+  	white-space:nowrap; 
+  	overflow:hidden; 
+  	text-overflow:ellipsis;
+  	cursor: pointer;
+}
+.nav-list > li:last-child > p{
+	border-bottom:none;
+}
+.nav-list > li > span{
+	display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    text-align: center;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    color:#aaa;
+    font-size: 12px;
+}
+.nav-list > li > i{
+	position: absolute;
+    color: #7c7c7c;
+    font-size: 20px;
+    right: 0;
+    top: 0;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+.nav-list > li > i:hover{
+	background-color:#fff;
+	color:#282e50;
+}
+.nav-list > li > .fa-angle-up{
+	display:none;
+}
+.nav-list > li ul{
+	width:100%;
+	display:none;
+}
+.nav-list > li:last-child ul{
+	border-top: 1px solid #ddd;
+}
+.nav-list > li ul li{
+	width:100%;
+  	cursor: pointer;
+  	line-height:40px;
+  	/* font-size:16px; */
+	border-bottom: 1px solid #ddd;
+}
+.nav-list > li ul li p{
+	margin-bottom:0;
+    display:block;
+  	white-space:nowrap; 
+  	overflow:hidden; 
+  	text-overflow:ellipsis;
+  	padding-left:30px;
+}
+.nav-list p:hover,
+.nav-list .action-p{
+	background-color:#282e50;
+	color:#fff;
+}
+/*-----------左侧栏-End-----------*/
+
+
+
+/*-----------右表单-Start-----------*/
+.right-form{
+    padding-left:280px;
+    width:100%;
+}
+.right-content{
+    width: 100%;
+}
+.pdf-content{
+	width:100%;
+	padding:20px 10px 20px 20px;
+}
+.pdf-main{
+	border: 1px solid #ccc;
+	min-height:400px;
+	border-radius: 3px;
+	background-color: #fff;
+}
+/*-----------右表单-End-----------*/
+
+
+
+/*-----------右侧关联文件-Start-----------*/
+.associated-file{
+	width:280px;
+	position: fixed;
+    top: 70px;
+    right: -290px;
+    z-index:99;
+    background-color:#f9f9f9;
+}
+.associated-file .nav-list li p{
+	padding:0 0 0 30px;
+}
+/*-----------右侧关联文件-End-----------*/

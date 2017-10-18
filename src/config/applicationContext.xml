@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+   	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="  
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+		http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-3.1.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+
+	<!-- Spring Property File Loader -->
+	<!-- <context:property-placeholder location="classpath:db.properties" /> -->
+	<bean id="propertyPlaceholderConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+      <property name="locations">
+        <list>
+          <value>classpath:db.properties</value>
+          <value>classpath:db_pool.properties</value>
+          <value>classpath:hibernate_config.properties</value>
+        </list>
+      </property>
+    </bean>
+	
+    <!-- DBCP Configuration -->
+    <!--
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+      <property name="driverClassName" value="${hibernate.driverClassName}" />
+	  <property name="url" value="${hibernate.db.url}" />
+	  <property name="username" value="${hibernate.db.username}" />
+	  <property name="password" value="${hibernate.db.password}" />
+	  <property name="maxActive" value="${hibernate.dbcp.maxActive}" />
+	  <property name="maxIdle" value="${hibernate.dbcp.maxIdle}" />
+	  <property name="maxWait" value="${hibernate.dbcp.maxWait}" />
+	  <property name="defaultAutoCommit" value="${hibernate.dbcp.defaultAutoCommit}" />
+	  <property name="removeAbandoned" value="${hibernate.dbcp.removeAbandoned}" />
+	  <property name="removeAbandonedTimeout" value="${hibernate.dbcp.removeAbandonedTimeout}" />
+	  <property name="testOnBorrow" value="${hibernate.dbcp.testOnBorrow}" />
+      <property name="testOnReturn" value="${hibernate.dbcp.testOnReturn}" />
+      <property name="validationQuery" value="${hibernate.dbcp.validationQuery}" />
+      <property name="timeBetweenEvictionRunsMillis" value="${hibernate.dbcp.timeBetweenEvictionRunsMillis}" />
+      <property name="numTestsPerEvictionRun" value="${hibernate.dbcp.numTestsPerEvictionRun}" />
+      <property name="minEvictableIdleTimeMillis" value="${hibernate.dbcp.minEvictableIdleTimeMillis}" />
+	</bean>
+    -->
+    
+    <!-- Proxool Configuration -->
+    <!--
+    <bean id="dataSource" class="org.logicalcobwebs.proxool.ProxoolDataSource">
+      <property name="driver" value="${hibernate.driverClassName}"></property>
+      <property name="driverUrl" value="${hibernate.db.url}"></property>
+      <property name="user" value="${hibernate.db.username}"></property>
+      <property name="password" value="${hibernate.db.password}"></property>
+      <property name="houseKeepingSleepTime" value="${hibernate.proxool.houseKeepingSleepTime}"></property>
+      <property name="prototypeCount" value="${hibernate.proxool.prototypeCount}"></property>
+      <property name="maximumActiveTime" value="${hibernate.proxool.maximumActiveTime}"></property>
+      <property name="maximumConnectionCount" value="${hibernate.proxool.maximumConnectionCount}"></property>
+      <property name="minimumConnectionCount" value="${hibernate.proxool.minimumConnectionCount}"></property>
+      <property name="trace" value="${hibernate.proxool.trace}"></property>
+      <property name="verbose" value="${hibernate.proxool.verbose}"></property>
+      <property name="delegateProperties" value="user=${hibernate.db.username},password=${hibernate.db.password}" />
+    </bean>
+    -->
+    
+    <!-- Hikari Configuration -->
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+      <property name="driverClassName" value="${hibernate.driverClassName}" />
+      <property name="jdbcUrl" value="${hibernate.db.url}" />
+      <property name="username" value="${hibernate.db.username}" />
+      <property name="password" value="${hibernate.db.password}" />
+      <property name="maximumPoolSize" value="${hibernate.hikari.maximumPoolSize}" />
+      <property name="minimumIdle" value="${hibernate.hikari.minimumIdle}" />
+      <property name="connectionTestQuery" value="select 1" />
+      <property name="dataSourceProperties">  
+        <props>  
+          <prop key="cachePrepStmts">true</prop>
+          <prop key="prepStmtCacheSize">250</prop>
+          <prop key="prepStmtCacheSqlLimit">2048</prop>
+          <prop key="useServerPrepStmts">true</prop>
+        </props>  
+      </property>
+    </bean>
+
+	<!-- C3P0 Configuration -->
+	<!--
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+	  <property name="jdbcUrl" value="${hibernate.db.url}"></property>
+	  <property name="driverClass" value="${hibernate.driverClassName}"></property>
+	  <property name="user" value="${hibernate.db.username}"></property>
+	  <property name="password" value="${hibernate.db.password}"></property>
+	  <property name="maxPoolSize" value="${hibernate.c3p0.maxPoolSize}"></property>
+	  <property name="minPoolSize" value="${hibernate.c3p0.minPoolSize}"></property>
+	  <property name="initialPoolSize" value="${hibernate.c3p0.initialPoolSize}"></property>
+	  <property name="maxIdleTime" value="${hibernate.c3p0.maxIdleTime}"></property>
+	  <property name="acquireIncrement" value="${hibernate.c3p0.acquireIncrement}"></property>
+	  <property name="acquireRetryAttempts" value="${hibernate.c3p0.acquireRetryAttempts}"></property>
+	  <property name="acquireRetryDelay" value="${hibernate.c3p0.acquireRetryDelay}"></property>
+	  <property name="testConnectionOnCheckin" value="${hibernate.c3p0.testConnectionOnCheckin}"></property>
+	  <property name="automaticTestTable" value="${hibernate.c3p0.automaticTestTable}"></property>
+	  <property name="idleConnectionTestPeriod" value="${hibernate.c3p0.idleConnectionTestPeriod}"></property>
+	  <property name="checkoutTimeout" value="${hibernate.c3p0.checkoutTimeout}"></property>
+	</bean>
+	-->
+	
+	<!-- Session Factory for Hibernate4 -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="packagesToScan">
+			<list>
+				<value>org.pangolin.eeip.entity</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+		      <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+			  <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+			  <prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+			  <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+			  <prop key="hibernate.generate_statistics">${hibernate.generate_statistics}</prop>
+			  <prop key="hibernate.max_fetch_depth">${hibernate.max_fetch_depth}</prop>
+			  <prop key="hibernate.jdbc.batch_size">${hibernate.jdbc.batch_size}</prop>
+			  <prop key="hibernate.autoReconnect">${hibernate.autoReconnect}</prop>
+			</props>
+		</property>
+	</bean>
+
+    <!-- Spring Upload Configuration -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+    	<property name="defaultEncoding" value="UTF-8" />
+    	<property name="maxUploadSize" value="104857600" />
+    	<property name="maxInMemorySize" value="4096" />
+    </bean>
+
+	<!-- Spring Transaction Manager Configuration -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+	  <property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<!-- Spring Transaction Advice Properties Configuration -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+	  <tx:attributes>
+	    <tx:method name="insert*" propagation="REQUIRED" />
+		<tx:method name="update*" propagation="REQUIRED" />
+		<tx:method name="edit*" propagation="REQUIRED" />
+		<tx:method name="save*" propagation="REQUIRED" />
+		<tx:method name="add*" propagation="REQUIRED" />
+		<tx:method name="new*" propagation="REQUIRED" />
+		<tx:method name="set*" propagation="REQUIRED" />
+		<tx:method name="remove*" propagation="REQUIRED" />
+		<tx:method name="delete*" propagation="REQUIRED" />
+		<tx:method name="change*" propagation="REQUIRED" />
+		<tx:method name="copy*" propagation="REQUIRED" />
+		<tx:method name="get*" propagation="REQUIRED" read-only="true" />
+		<tx:method name="find*" propagation="REQUIRED" read-only="true" />
+		<tx:method name="load*" propagation="REQUIRED" read-only="true" />
+		<tx:method name="*" propagation="REQUIRED" read-only="true" />
+	  </tx:attributes>
+	</tx:advice>
+
+	<!-- Spring AOP Configuration -->
+	<aop:config>
+      <aop:pointcut id="serviceOperation" expression="execution(* org.pangolin.eeip.service.*.*(..))" />
+	  <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceOperation" />
+	</aop:config>
+
+	<!-- Spring Bean Loader Configuration -->
+	<context:component-scan base-package="org.pangolin.eeip" />
+	
+	<!-- Spring Scheduled Task -->
+	<task:scheduled-tasks>
+		<task:scheduled ref="notificationTask" method="publish" initial-delay="60000" fixed-delay="60000"/>
+		<task:scheduled ref="notificationTask" method="withdraw" initial-delay="60000" fixed-delay="60000"/>
+		
+		<!-- Cron Expression：  
+		  1. Sec: 0 ~ 59
+		  2. Min: 0 ~ 59
+		  3. Hour: 0 ~23
+		  4. Day: 0 ~ 31
+		  5. Month: 0 ~ 11
+		  6. Day of Week: 1(SUN) ~ 7(SAT), SUN，MON，TUE，WED，THU，FRI，SAT
+		  7. Year: 1977 ~ 2099
+		-->
+		<task:scheduled ref="thDataCollectionTask" method="collectTHData" cron="0 0 10,15 * * ?"/>
+    </task:scheduled-tasks>
+
+    <!-- Spring Cache Configuration -->
+    <cache:annotation-driven cache-manager="cacheManager"/>
+    
+    <bean id="cacheManager" class="org.springframework.cache.support.SimpleCacheManager">
+    	<property name="caches">
+    		<set>
+    			<bean name="orgCache" class="org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean"/>
+    			<bean name="userOrgCache" class="org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean"/>
+    			<bean name="noteCache" class="org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean"/>
+            </set>
+        </property>
+    </bean>
+    
+</beans>

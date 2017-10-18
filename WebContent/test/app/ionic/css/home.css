@@ -1,0 +1,109 @@
+.bar-positive-demo {
+	border-color: #22A041;
+	background-color: #22A041;
+	background-image: linear-gradient(0deg, #22A041, #22A041 50%, transparent 50%);
+	color: #fff;
+}
+
+.bar-positive-demo .title {
+	color: #FFF;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 0;
+	overflow: hidden;
+	margin: 0 10px;
+	min-width: 30px;
+	height: 43px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 44px;
+}
+
+.sudoku {
+	position: relative;
+	text-align: center;
+}
+
+.sudoku .fun-btn {
+	width: 55px;
+	height: 55px;
+}
+
+.sudoku .row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 15px;
+	width: 100%;
+}
+
+.slider {
+	height: 100%;
+}
+
+.slider-slide {
+	color: #000;
+	background-color: #fff;
+	text-align: center;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+		"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.logout-btn {
+	background-color: #B8B0A4 !important;
+	color: #FFF !important;
+}
+
+.more-btn:before {
+	color: #FFF;
+	font-size: 20px !important;
+}
+
+.tab-info-ico {
+	background: url("../images/tabs/tab_01.png") no-repeat center;
+	background-size: 25px 24px;
+}
+
+.tab-info-ico-outline {
+	background: url("../images/tabs/tab_01_outline.png") no-repeat center;
+	background-size: 25px 24px;
+}
+
+.tab-newspaper-ico {
+	background: url("../images/tabs/tab_02.png") no-repeat center;
+	background-size: 27px 24px;
+}
+
+.tab-newspaper-ico-outline {
+	background: url("../images/tabs/tab_02_outline.png") no-repeat center;
+	background-size: 27px 24px;
+}
+
+.tab-survey-ico {
+	background: url("../images/tabs/tab_03.png") no-repeat center;
+	background-size: 22px 24px;
+}
+
+.tab-survey-ico-outline {
+	background: url("../images/tabs/tab_03_outline.png") no-repeat center;
+	background-size: 22px 24px;
+}
+
+.tab-profile-ico {
+	background: url("../images/tabs/tab_04.png") no-repeat center;
+	background-size: 21px 24px;
+}
+
+.tab-profile-ico-outline {
+	background: url("../images/tabs/tab_04_outline.png") no-repeat center;
+	background-size: 21px 24px;
+}

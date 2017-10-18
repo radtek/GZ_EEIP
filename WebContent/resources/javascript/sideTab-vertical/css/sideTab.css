@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.tab_container {
+	width:30px; 
+	height:505px; 
+	background-color:#157FCC; 
+	position:relative; 
+	float:left;
+}
+
+.tabItemIcon {
+	width:16px; 
+	height:16px; 
+	background-image:url(../images/list_icon.png); 
+	position:absolute; 
+	left:8px;
+	top:8px;	
+}
+
+.tabItem {
+	width:30px; 
+	height:170px; 
+	background-color:#4B9CD7; 
+	text-align:center; 
+	position:relative; 
+	margin:0px 0px 1px 0px; 
+	cursor:pointer;
+}
+
+.tabItem_activated {
+	width:30px;
+	height:170px;
+	background-color:#ADD2ED;
+	text-align:center;
+	position:relative;
+	margin:0px 0px 1px 0px; 
+	cursor:pointer;
+}
+
+.tabText {
+	font-size:15px;
+	color:#FFF;
+	font-weight:bold;
+	font-family:"Microsoft YaHei", "微软雅黑", Arial, Helvetica, sans-serif, STXihei, "华文细黑";
+	position:absolute;
+	left:1px;
+	top:25px;
+}
+
+.tabText_activated {
+	font-size:15px;
+	color:#3B86CD;
+	font-weight:bold;
+	font-family:"Microsoft YaHei", "微软雅黑", Arial, Helvetica, sans-serif, STXihei, "华文细黑";
+	position:absolute;
+	left:1px;
+	top:25px;
+}
+
+.tab_content_container {
+	width:500px;
+	height:505px;
+	background-color:#ADD2ED;
+	position:relative; 
+	left:30px;
+}
+
+.tab_content {
+	width:495px; 
+	height:495px; 
+	background-color:#FFF; 
+	position:absolute; 
+	left:5px; 
+	top:5px;	
+}

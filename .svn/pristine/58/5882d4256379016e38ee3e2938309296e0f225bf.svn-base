@@ -1,0 +1,39 @@
+#C3P0 Connection Pool
+hibernate.c3p0.maxPoolSize=40
+hibernate.c3p0.minPoolSize=1
+hibernate.c3p0.initialPoolSize=5
+hibernate.c3p0.maxIdleTime=25000
+hibernate.c3p0.acquireIncrement=1
+hibernate.c3p0.acquireRetryAttempts=30
+hibernate.c3p0.acquireRetryDelay=1000
+hibernate.c3p0.testConnectionOnCheckin=true
+hibernate.c3p0.automaticTestTable=c3p0TestTable
+hibernate.c3p0.idleConnectionTestPeriod=18000
+hibernate.c3p0.checkoutTimeout=3000
+
+#Proxool Connection Pool
+hibernate.proxool.houseKeepingSleepTime=60000
+hibernate.proxool.prototypeCount=5
+hibernate.proxool.maximumActiveTime=1800000
+hibernate.proxool.maximumConnectionCount=100
+hibernate.proxool.minimumConnectionCount=10
+hibernate.proxool.trace=false
+hibernate.proxool.verbose=false
+
+#DBCP Connection Pool
+hibernate.dbcp.maxActive=100
+hibernate.dbcp.maxIdle=100
+hibernate.dbcp.maxWait=1000
+hibernate.dbcp.defaultAutoCommit=true
+hibernate.dbcp.removeAbandoned=true
+hibernate.dbcp.removeAbandonedTimeout=60
+hibernate.dbcp.testOnBorrow=false
+hibernate.dbcp.testOnReturn=false
+hibernate.dbcp.validationQuery=select 1
+hibernate.dbcp.timeBetweenEvictionRunsMillis=30000
+hibernate.dbcp.numTestsPerEvictionRun=30
+hibernate.dbcp.minEvictableIdleTimeMillis=1800000
+
+#Hikari Connection Pool
+hibernate.hikari.maximumPoolSize=100
+hibernate.hikari.minimumIdle=100

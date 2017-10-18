@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+.chineseSideTab .x-tab-inner {
+	width: 120px\9;
+	height: 16px;
+}
+
+.rotateText {
+	-webkit-transform: rotate(90deg); /* for Chrome || Safari */
+	-moz-transform: rotate(90deg); /* for Firefox */
+	-o-transform: rotate(90deg); /* for Opera */
+	-ms-transform: rotate(90deg); /* for IE 10 */
+	transform: rotate(90deg); /* for for IE9 */
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, STXihei;
+	float: left;
+	margin: 0px 1px 0px 0px;
+	width: 18px;
+	height: 15px;
+}
+
+.rotateText-ie8-actived {
+	-webkit-transform: rotate(90deg); /* for Chrome || Safari */
+	-moz-transform: rotate(90deg); /* for Firefox */
+	-o-transform: rotate(90deg); /* for Opera */
+	-ms-transform: rotate(90deg); /* for IE 10 */
+	transform: rotate(90deg); /* for IE9 */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(Rotation=1);
+	float: left;
+	margin: 0px 1px 0px 0px;
+	width: 18px;
+	height: 15px;
+	background-color: #ADD2ED;
+	color: #157FCC;
+}
+
+.rotateText-ie8 {
+	-webkit-transform: rotate(90deg); /* for Chrome || Safari */
+	-moz-transform: rotate(90deg); /* for Firefox */
+	-o-transform: rotate(90deg); /* for Opera */
+	-ms-transform: rotate(90deg); /* for IE 10 */
+	transform: rotate(90deg); /* for IE9 */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(Rotation=1);
+	float: left;
+	margin: 0px 1px 0px 0px;
+	width: 18px;
+	height: 15px;
+	background-color: #4B9CD7;
+	color: #FFFFFF;
+}

@@ -1,0 +1,520 @@
+* {font-family: "Microsoft Yahei";}
+.body{
+	overflow: hidden;
+}
+.screenBg{
+	background: url("../images/screenBg.jpg") no-repeat top left;
+	background-size: cover;
+}
+/*-------------------------缓冲页面--start---------------------------*/
+.bufferPage{
+	position: relative;
+	/*display: none;*/
+}
+.buffer{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -175px;
+}
+.bufferLogo{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+}
+.logoImg{
+	width: 100%;
+}
+.progressBar{
+	width: 100%;
+	height: 100px;
+	position: relative;
+}
+.smallBar{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	margin-top: -1px;
+	background-color: rgba(45, 60, 65, 0.5);
+}
+.smallBarLight{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	margin-top: -1px;
+	background-color: #fff;
+	background: -webkit-linear-gradient(left, #2d3c41 , #fff); 
+    background: -o-linear-gradient(right, #2d3c41, #fff); 
+    background: -moz-linear-gradient(right, #2d3c41, #fff); 
+    background: linear-gradient(to right, #2d3c41 , #fff); 
+}
+.brightenedDot{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0px 0px 40px 15px #fff;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	margin-top: -5px;
+	margin-left: -10px
+}
+.loadPercentage{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 40px;
+	margin-bottom: 0;
+	height: 70px;
+	line-height: 70px;
+}
+.loadWords{
+	width: 100%;
+	text-align: center;
+	color: #5d858d;
+	font-size: 20px;
+	margin-bottom: 0;
+	height: 30px;
+	line-height: 30px;
+}
+/*-------------------------缓冲页面--end---------------------------*/
+
+/*-------------------------首页--start---------------------------*/
+.homePage{
+	position: relative;
+	/*display: none;*/
+}
+.homeHeader{
+	width: 100%;
+	height: 83px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url("../images/homeHeaderBg.png") no-repeat top left;
+	background-size: 100%;
+}
+.homeFooter{
+	width: 100%;
+	height: 90px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: url("../images/homeFooterBg.png") no-repeat bottom left;
+	background-size: 100%;
+}
+.home{
+	position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -250px;
+    width: 100%;
+}
+.homeLogo{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+}
+.homeText{
+	width: 100%;
+	height: 50px;
+	position: relative;
+	margin: 20px 0;
+}
+.taperedLine{
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 2;
+	margin-top: -1px;
+	background-color: #5ec1d1;
+	background: -webkit-linear-gradient(left, #2d3c42 0%, #5ec1d1 30%, rgba(0,0,0,0) 30.1%, rgba(0,0,0,0) 69.9%, #5ec1d1 70%, #2d3c42 100%);
+    background: -o-linear-gradient(right, #2d3c42 0%, #5ec1d1 30%, rgba(0,0,0,0) 30.1%, rgba(0,0,0,0) 69.9%, #5ec1d1 70%, #2d3c42 100%);
+    background: -moz-linear-gradient(right, #2d3c42 0%, #5ec1d1 30%, rgba(0,0,0,0) 30.1%, rgba(0,0,0,0) 69.9%, #5ec1d1 70%, #2d3c42 100%);
+    background: linear-gradient(to right, #2d3c42 0%, #5ec1d1 30%, rgba(0,0,0,0) 30.1%, rgba(0,0,0,0) 69.9%, #5ec1d1 70%, #2d3c42 100%);
+}
+.homeBrightenedDot{
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	margin-top: -5px;
+	background-color: #2d8a7f;
+	box-shadow: 0px 0px 20px 15px #1b4052;
+}
+.leftDot{
+	left: 30.1%;
+}
+.rightDot{
+	left: 69.2%;
+}
+.homeName{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 40px;
+	color: #a8e6e7;
+	text-shadow: 0px 0px 20px #fff;
+	margin-bottom: 0;
+	z-index: 3;
+}
+.homeModule{
+	width: 100%;
+	padding: 0 60px;
+	position: relative;
+}
+.moduleDiv{
+	width: 100%;
+	overflow:hidden;
+}
+.scrollLeft{
+	overflow: hidden;
+	padding-left: 0;
+    margin-bottom: 0;
+}
+.scrollLeft li{
+	width: 200px !important;
+	height: 200px;
+	padding: 10px;
+	float: left;
+	list-style-type: none;
+}
+.outerRing{
+	width: 100%;
+	height: 100%;
+	padding: 25px;
+	border-radius: 50%;
+	border: 2px solid #7ae8ec;
+	position: relative;
+}
+.solidDot{
+	position: absolute;
+	top: 15px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+	background-color: #8ad9dc;
+}
+.innerRing{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 1px solid #1f859a;
+	text-align: center;
+	line-height: 130px;
+	color: #56baca;
+	font-size: 24px;
+    font-weight: bold;
+}
+.outerRing:hover{
+	background-color: rgba(32,101,93,0.2);
+	cursor: pointer;
+}
+.outerRing:hover .solidDot{
+	box-shadow: 0px 0px 20px 5px #56baca;
+}
+.outerRing:hover .innerRing{
+	color: #fff;
+	text-shadow: 0px 0px 20px #fff;
+}
+.homeDirection{
+	display: none;
+}
+.homeDirection span{
+	position: absolute;
+	top: 0;
+	width: 60px;
+	height: 100%;
+	text-align: center;
+	font-size: 80px;
+	color: #fff;
+	cursor: pointer;
+}
+.homeNext{
+	left: 0;
+}
+.homePrev{
+	right: 0;
+}
+.homeDirection span i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-top: -12px;
+	margin-left: -12px;
+	display: block;
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-o-transform:rotate(45deg);  
+	-ms-transform:rotate(45deg); 
+	transform:rotate(45deg);  
+}
+.homeNext i{
+	border-left: 2px solid #72a7ab;
+	border-bottom: 2px solid #72a7ab;
+}
+.homePrev i{
+	border-top: 2px solid #72a7ab;
+	border-right: 2px solid #72a7ab;
+}
+.homeDirection span:hover{
+	background-color: rgba(255,255,255,0.1);
+}
+.tempWrap{
+	margin: 0 auto;
+}
+/*-------------------------首页--end---------------------------*/
+
+/*-------------------------轮播页面--start---------------------------*/
+.bigScreen{
+	/*display: none;*/
+}
+.bigScreenModule{
+	overflow:hidden; 
+	position:relative;
+	background: url("../images/mainHeaderBg.png") no-repeat top left, url("../images/mainFooterBg.png") no-repeat bottom left;
+	background-size: 100%;
+}
+.bigScreenDirection{
+	/*display: none;*/
+	position: absolute;
+	top: 50%;
+	right: 0;
+	z-index: 99;
+	width: 80px;
+	height: 160px;
+	margin-top: -80px;
+}
+.bigScreenDirection ul{
+	position: absolute;
+	top: 160px;
+	right: -200px;
+	color: #fff;
+}
+.bigScreenDirection ul li.on{
+	color: #000;
+}
+.directionKey{
+	width: 80px;
+	height: 80px;
+	padding: 15px;
+}
+.directionKey > span{
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+	border: 1px solid rgba(75,188,206,0.3);
+	background-color: rgba(255,255,255,0.1);
+	cursor: pointer;
+	position: relative;
+}
+.directionKey > span > i{
+	width: 20px;
+	height: 20px;
+	/*display: block;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-o-transform:rotate(45deg);  
+	-ms-transform:rotate(45deg); 
+	transform:rotate(45deg);
+}
+.bigScreenTop i{
+	border-top: 2px solid #72a7ab;
+	border-left: 2px solid #72a7ab;
+	margin-top: -5px;
+	margin-left: -10px;
+}
+.bigScreenBottom i{
+	border-bottom: 2px solid #72a7ab;
+	border-right: 2px solid #72a7ab;
+	margin-top: -13px;
+	margin-left: -10px;
+}
+.scrollTop{
+	width: 100%;
+	position:absolute; 
+	left:0px;
+	top:0px;    
+	margin: 0;
+    padding: 0;
+}
+.scrollTop li{
+	list-style-type: none;
+	position: relative;
+	width:100%;
+}
+.main{
+	position: relative;
+}
+.mainHeader{
+	width: 100%;
+	height: 104px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* background: url("../images/mainHeaderBg.png") no-repeat top left;
+	background-size: 100%; */
+}
+.mainName{
+	width: 100%;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 18px;
+	color: #03434d;
+	line-height: 50px;
+	text-shadow: 0px 0px 20px #fff;
+}
+.clockContent{
+	position: absolute;
+	top: 20px;
+	right: 0;
+	z-index:999;
+	font-size: 17px;
+}
+.clockContent p{
+	margin-bottom: 0;
+	/* height: 20px;
+	line-height: 20px; */
+	color: #56d4dc;
+	text-align: right;
+	padding-right: 20px;
+	text-shadow: 0px 0px 10px rgba(146,248,244,1);
+}
+.mainFooter{
+	width: 100%;
+	height: 52px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	/* background: url("../images/mainFooterBg.png") no-repeat bottom left;
+	background-size: 100%; */
+}
+.mainOuterRing{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #102e48;
+	padding: 10px;
+	position: absolute;
+	bottom: -13px;
+	left: 50%;
+	margin-left: -40px;
+}
+.mainInnerRing{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #56baca;
+	padding: 10px;
+	box-shadow: 0px 0px 7px #7ddbea;
+	cursor: pointer;
+}
+.mainLogo{
+	width: 100%;
+}
+.mainContent{
+	padding: 60px 20px 52px 20px;
+	width: 100%;
+	height: 100%;
+}
+.mainDot{
+	position: relative;
+}
+.mainBgShine{
+	position: absolute;
+    top: 14px;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 6px 4px rgba(130, 111, 208, 0.6);
+}
+.mainLuminousPoint{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: -4px;
+    background-color: #a5f3ff;
+    box-shadow: 0px 0px 6px 5px rgba(255,255,255,0.5);
+}
+.height50{
+	height: 50%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 0;
+}
+.height100{
+	height: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 0;
+}
+.height80{
+	height: 80%;
+	margin-top: 5%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 0;
+}
+.iframe{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding:0 1px;
+}
+.iframeStyle{
+	border: 1px solid #56baca;
+	border-bottom: 3px solid #2bede6;
+	background-color: rgba(86,186,202,0.1);
+}
+/*-------------------------轮播页面--end---------------------------*/
+
+/*-------------------------不同分辨率屏幕的样式处理--start---------------------------*/
+/*min-width < screen  屏幕宽度大于min-width*/  
+@media screen and (min-width: 1921px) { 
+    
+}
+
+/*min-width < max-width 屏幕宽度大于min-width，小于max-width*/
+@media (min-width: 1367px) and (max-width: 1920px) { 
+    .clockContent{
+    	top:30px;
+    	font-size: 20px;
+    }
+    .mainName{
+    	font-size: 24px;
+    	line-height:70px;
+    }
+    .mainContent{
+		padding: 80px 20px 52px 20px;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/*screen < max-width  屏幕宽度小于max-width*/
+@media screen and (max-width: 960px) { 
+    
+}
+/*-------------------------不同分辨率屏幕的样式处理--end---------------------------*/

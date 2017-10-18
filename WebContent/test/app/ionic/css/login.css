@@ -1,0 +1,55 @@
+.bar-positive-demo {
+	border-color: #22A041;
+	background-color: #22A041;
+	background-image: linear-gradient(0deg, #22A041, #22A041 50%, transparent 50%);
+	color: #fff;
+}
+
+.bar-positive-demo .title {
+	color: #FFF;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 0;
+	overflow: hidden;
+	margin: 0 10px;
+	min-width: 30px;
+	height: 43px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 44px;
+}
+
+.login-btn {
+	background-color: #22A041 !important;
+	color: #FFF !important;
+}
+
+.system-logo {
+	width: 100%;
+	height: 250px;
+	text-align: center;
+}
+
+.system-logo img {
+	width: 200px;
+	height: 200px;
+	margin-top: 20px;
+}
+
+.padding .left {
+	color: #22A041;
+	font-size: 15px;
+	float: left;
+}
+
+.padding .right {
+	color: #5AADD9;
+	font-size: 15px;
+	float: right;
+}

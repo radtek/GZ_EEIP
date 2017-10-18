@@ -1,0 +1,6 @@
+APPLY_MEETING_ROOM=http://localhost/meeting/foreground/meetingApplication/
+MY_APP=http://localhost/meeting/foreground/meetingApplication/applicationStatusMgt/
+MY_MEETING=http://localhost/meeting/foreground/meetingInfoMgt/
+MY_APPROVAL=http://localhost/meeting/foreground/meetingApplication/approvalStatusMgt/
+MEETING_ROOM_MGT=http://localhost/meeting/foreground/meetingRoomMgt
+MEETING_REAL_TIME_QUERY=http://localhost/meeting/foreground/realTimeStatus/meetingRoomStatus/meetingRoomStatusChart.jsp

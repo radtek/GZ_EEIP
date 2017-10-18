@@ -1,0 +1,115 @@
+/*jqgrid*/
+a.ui-jqgrid-titlebar-close{
+    display: none;
+}
+.ui-jqgrid .ui-userdata{
+    padding: 5px 5px 0px 5px;
+    height: 40px;
+    background-color: #F7F7F7;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+}
+.ui-jqgrid-view>.ui-jqgrid-titlebar{
+    color: #5b88da;
+    background-image: linear-gradient(to bottom,#fff 0,#eee 100%);
+    border: 1px solid #DDD;
+}
+.ui-jqgrid-labels th[id*="_cb"]>div {
+    padding-top: 0;
+    text-align: center!important;
+}
+.ui-jqgrid-btable .ui-widget-content.ui-state-highlight{
+    background-color: #6fb3e0;
+}
+.ui-jqgrid .ui-jqgrid-bdiv{
+    background-color: #F7F7F7;
+}
+.ui-jqgrid .ui-jqgrid-btable{
+    background-color: #ffffff;
+}
+/*card page*/
+.ui-card{
+    overflow: hidden;
+}
+.ui-card .control-label{
+    text-align: right;
+}
+.ui-card .row .clearfix{
+    margin-bottom: 10px;
+}
+/*card checkbox*/
+.ui-card label+label{
+    margin-top: 4px;
+    margin-left: 5px;
+}
+.ui-card textarea{
+    resize: vertical;
+}
+.ui-card .alone+div{
+    clear: both;
+}
+.ui-card span.input-icon{
+    width: 100%;
+}
+.col-label{
+    float: left;
+    width: 75px;
+}
+.tf-lbl-offset-1{
+    min-height: 40px;
+}
+.tf-lbl-offset-2{
+    margin-top: -10px;
+    min-height: 50px;
+}
+.tf-lbl-offset-3,.tf-lbl-offset-4,.tf-lbl-offset-5{
+    margin-top: -30px;
+}
+.col-none{
+    display: none;
+}
+.col-input{
+    float:right;
+    width: 100%;
+    padding-right: 90px;
+    margin-right: -80px;
+}
+.col-input.refer{
+    height: 30px;
+}
+.col-value{
+    float: right;
+    width: 100%;
+}
+.widget-toolbox-menu{
+    top:45px;
+    border-top: none;
+    z-index: 1000;
+}
+/*subcard*/
+.sub-card{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.sub-card .tab-content{
+    padding: 5px 0px 0px 0px;
+}
+/*card page end*/
+
+/*refer*/
+.modal-refer .modal-dialog{
+    width: 1000px;
+}
+.modal-refer .modal-body{
+    padding: 0px;
+}
+.modal-refer .modal-content{
+    border: none;
+}
+.modal-refer .ui-jqgrid-titlebar{
+    top: 0px;
+}
+/*refer end*/
+.effective{
+    color: #ff0000!important;
+}

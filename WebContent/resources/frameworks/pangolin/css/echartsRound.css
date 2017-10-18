@@ -1,0 +1,90 @@
+.echartsRound{
+	background: url("../images/smallBg.png") no-repeat bottom left;
+	background-size: 100%;
+	padding-top: 80px;
+	position: relative;
+}
+.imgContent{
+	position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -55px;
+    width: 100%;
+}
+.roundContent{
+	width: 160px;
+	height: 160px;
+	margin: 0 auto;
+	position: relative;
+}
+.roundDiv{
+	width: 100%;
+	height: 100%;
+}
+.outerRound{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 2px solid #56baca;
+	padding: 12%;
+	position: relative;
+}
+.innerRound{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 1px solid #197484;
+}
+.roundDot{
+	width: 20px;
+	height: 20px;
+	background-color: #56baca;
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	margin-left: -10px;
+	border-radius: 50%;
+}
+.roundText{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	margin-top: -25px;
+}
+.writtenWords{
+	padding-top: 20px;
+	display:none;
+}
+.writtenWords p{
+	color: #5d858d;
+	text-align: center;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.writtenWords p:first-child{
+	color: #95c8d2;
+	font-size: 16px;
+}
+
+/*-------------------------不同分辨率屏幕的样式处理--start---------------------------*/
+/*min-width < screen  屏幕宽度大于min-width*/  
+@media screen and (min-width: 1921px) { 
+    
+}
+
+/*min-width < max-width 屏幕宽度大于min-width，小于max-width*/
+@media (min-width: 1367px) and (max-width: 1920px) { 
+    
+}
+
+/*screen < max-width  屏幕宽度小于max-width*/
+@media screen and (max-width: 960px) { 
+    
+}
+/*-------------------------不同分辨率屏幕的样式处理--end---------------------------*/

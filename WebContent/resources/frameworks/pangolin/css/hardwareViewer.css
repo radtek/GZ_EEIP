@@ -1,0 +1,96 @@
+.nav-tabs{
+	border-top:1px solid #d8dbde;
+}
+.nav-tabs li:first-child.active{
+	border-left:1px solid #d8dbde;
+}
+.nav-tabs li:last-child.active{
+	border-right:1px solid #d8dbde;
+}
+.nav-tabs li a{
+	font-size:16px;
+}
+.tab-content{
+	border: 1px solid #d8dbde;
+    border-top: none;
+    min-height:300px;
+}
+.dataTime{
+	padding: 10px 30px 10px 0;
+    text-align: right;
+    position: relative;
+}
+.dot{
+	position: absolute;
+	top: 15px;
+    right: -5px;
+    z-index: 5;
+	width:10px;
+	height:10px;
+	border-radius: 50%;
+	background-color: #428bca;
+}
+.dataContent{
+	padding-left:30px;
+	padding-bottom: 30px;
+    border-left: 1px solid #ccc;
+}
+.row:last-child .dataContent{
+	padding-bottom: 0px;
+}
+.dataTitle{
+	padding:10px 30px 10px 10px;
+	position: relative;
+	border-bottom:1px solid #ebebeb;
+	/* border-radius:4px; */
+}
+.dataTitle p{
+	margin-bottom:0;
+}
+.dataTitle i{
+	position: absolute;
+	top: 50%;
+    right: 0px;
+    z-index: 5;
+    margin-top:-15px;
+    font-size:20px;
+    color:#f00;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+.dataTitle i:last-child{
+	display:none;
+}
+.dataDetails{
+	border:1px solid #ebebeb;
+	border-radius:4px;
+	margin-top:10px;
+	padding:0 10px;
+	display:none;
+}
+.dataDetails > div{
+	padding:10px 0;
+	border-bottom:1px solid #ebebeb;
+	overflow:hidden;
+}
+.dataDetails > div:last-child{
+	border-bottom:none;
+}
+#four .form-bordered .form-group{
+	padding:10px 0;
+}
+#four .form-horizontal .control-label{
+	height: 30px;
+    line-height: 30px;
+    padding-top: 0;
+}
+#four .rightContent{
+	line-height:30px;
+}
+#four .rightContent p{
+	margin-bottom:0;
+}

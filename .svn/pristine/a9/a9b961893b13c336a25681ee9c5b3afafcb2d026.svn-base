@@ -1,0 +1,27 @@
+.promptDiv{
+	display:none;
+    position: fixed;
+    top:0;
+    left: 50%;
+    width: 1100px;
+    margin-left: -550px;
+    z-index: 9999;
+}
+.promptDiv .alert{
+	margin-bottom:0;
+	padding:8px 15px;
+	border-radius: 0;
+}
+.promptDiv .alert .close{
+	margin-top: 1px;
+}
+.error{
+    border: 1px solid #E07470;
+}
+/* .errors{
+    color: #E07470;
+    font-weight: bolder;
+    font-size: 20px;
+    vertical-align: middle;
+    padding-right: 5px;
+} */

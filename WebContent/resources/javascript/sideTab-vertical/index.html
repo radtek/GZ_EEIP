@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Side Tab</title>
+    <link type="text/css" rel="stylesheet" href="css/sideTab.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jsMap.js"></script>
+    <script type="text/javascript" src="js/sideTab.js"></script>
+  </head>
+  <body>
+    <div id="sideTab">
+      <!--
+      <div id="tabs" class="tab_container">
+        <div id="tab1" class="tabItem_activated" onClick="changeTab(this)">
+          <div class="tabItemIcon"></div>
+          <span class="tabText_activated">Test Tab 1</span>
+        </div>
+        <div id="tab2" class="tabItem" onClick="changeTab(this)">
+          <div class="tabItemIcon"></div>
+          <span class="tabText">Test Tab 2</span>
+        </div>
+        <div id="tab3" class="tabItem" onClick="changeTab(this)">
+          <div class="tabItemIcon"></div>
+          <span class="tabText">Test Tab 3</span>
+        </div>
+        <div id="tab4" class="tabItem" onClick="changeTab(this)">
+          <div class="tabItemIcon"></div>
+          <span class="tabText">Test Tab 4</span>
+        </div>
+        <div id="tab5" class="tabItem" onClick="changeTab(this)">
+          <div class="tabItemIcon"></div>
+          <span class="tabText">Test Tab 5</span>
+        </div>
+      </div>
+      <div id="main" class="tab_content_container">
+        <div id="content" class="tab_content">
+          <iframe id="tabFrame" src="childPages/test1.html" width="495" height="495" frameborder="0"></iframe>
+        </div>
+      </div>
+      -->
+    </div>
+  </body>
+  <script type="text/javascript">
+    var tabInfo = new TabInfo();
+	var tabNames = new Array();
+	tabNames.push("测试测试列表");
+	tabNames.push("测试测试列表");
+	tabNames.push("测试测试列表");
+	tabNames.push("测试测试列表");
+	
+	var tabMap = new Map();
+    tabMap.put("tab1", "http://www.pconline.com.cn");
+    tabMap.put("tab2", "http://www.price.com.hk");
+    tabMap.put("tab3", "http://www.gdie.com");
+    tabMap.put("tab4", "http://www.vgooo.com");
+	
+	tabInfo.init(tabNames, tabMap);
+	
+	initialize(tabInfo, "sideTab");
+  </script>
+</html>

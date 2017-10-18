@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="GZ_EEIP">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/dao"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/service"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/web"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/config"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/entity"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/common"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/webservice"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/dto"/>
+        <property name="java-output-path" value="/GZ_EEIP/build/classes"/>
+        <property name="context-root" value="eeip"/>
+    </wb-module>
+</project-modules>

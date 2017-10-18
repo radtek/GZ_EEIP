@@ -1,0 +1,1043 @@
+@charset "utf-8";
+/*-----------琛ㄥ崟-Start-----------*/
+.form-title{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    color:#333;
+    font-weight: bold;
+}
+.form-content{
+    width: 100%;
+    padding-top:20px;
+}
+.form-horizontal .form-group{
+	margin-left:0;
+	margin-right:0;
+}
+.form-group {
+    margin-bottom: 30px;
+}
+.form-content label{
+    color: #333;
+    /* font-size: 14px; */
+    padding-left: 8px;
+}
+.form-control{
+    padding: 5px;
+    height: 34px;
+    /* font-size:16px; */
+}
+.form-control[readonly].form-input-text,
+.form-control[disabled].form-input-text{
+	background-color:#fff;	
+}
+.form-group .rdio,
+.form-group .ckbox{
+    margin-top: 6px;
+}
+input[type=checkbox],
+input[type=radio]{
+	margin:2px 0 0;
+}
+
+.file-btn{
+	position: relative;
+}
+.file-btn .btn{
+	height:34px;
+	margin-right:20px;
+}
+.file-btn .btn:hover,
+.file-btn .btn:focus{
+	color:#fff;
+}
+.input-file{
+	/* display:none!important; */
+	position: absolute;
+    top: 0;
+    left: 10px;
+    width: 60px;
+    height: 34px;
+    opacity: 0;
+    z-index: 99;
+    font-size:0;
+    width:80px;
+    cursor: pointer;
+}
+.recordfile{
+	overflow:auto;
+}
+
+.document-content{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0 15px;
+    background-color:#fff;
+    overflow:hidden;
+    min-height: 42px;
+}
+.document-style{
+    line-height: 40px;
+    font-size: 16px;
+    width:50%;
+    float:left;
+    /* background: url("../../images/eeip/word.png") no-repeat left center; */
+    background: url("../../images/eeip/uploadImg/doc.png") no-repeat left center;
+    background-size: 24px 24px;
+    padding-left:30px;
+}
+.video-list .document-style{
+ 	background: url("../../images/eeip/uploadImg/video.png") no-repeat left center;
+ 	background-size: 24px 24px;
+}
+.document-style span{
+	cursor: pointer;
+}
+.document-style span:hover{
+	border-bottom:1px solid #282e50;
+}
+
+.okfile .remove{
+	border: none;
+    padding: 5px;
+    background-color: rgba(0,0,0,0);
+}
+.upload-file .btn{
+	margin-left:10px;
+}
+
+.add-material-content{
+	padding-top:20px;
+	/* border-top: 1px solid #efefef; */
+	overflow: hidden;
+}
+.add-material-content .btn{
+	height: 35px;
+    width: 120px;
+    font-size: 14px;
+}
+.material-template{
+	display:none;
+}
+.module-border{
+	border-top: 1px dashed #ccc;
+    margin-top: 20px;
+    position: relative;
+    padding-top: 30px;
+}
+.module-border .remove-btn{
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #ccc;
+    cursor: pointer;
+}
+.module-border .remove-btn:hover{
+	color:#333;
+}
+
+.item p{
+	margin-bottom:0;
+}
+.item p a{
+	line-height: 35px;
+}
+
+.system-hint{
+	text-align: center;
+    font-size: 18px;
+    padding-top: 30px;
+}
+.add-device-content{
+	border-top: 1px #ccc dashed;
+    padding: 40px 0 30px 0;
+    position: relative;
+}
+.add-device-content .remove-btn{
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #ccc;
+}
+.add-device-content .remove-btn:hover{
+	color:#333;
+}
+
+.ckbox input[type="checkbox"]:checked + label::after{
+	top: 2px;
+}
+
+.suspension-reason{
+	padding: 8px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.suspension-reason > div{
+	padding:5px 0;
+}
+.reason-input{
+	border: none;
+    border-bottom: 1px solid #ccc;
+    padding:0 5px;
+}
+.reason-input:focus{
+	outline: none;
+}
+.input-short-width{
+	width: 30%;
+}
+.input-long-width{
+	width: 70%;
+}
+
+.div-label{
+	height:34px;
+	line-height:34px;
+}
+
+textarea.form-control{
+	height:10em;
+}
+.form-group-margin{
+	margin:30px 0;
+}
+
+.form-horizontal .control-label.center{
+	text-align: center;
+}
+
+select.form-control{ 
+  	appearance:none;  
+  	-moz-appearance:none;  
+  	-webkit-appearance:none; 
+  	background: url("../../images/eeip/jiantou.png") no-repeat scroll right center transparent;  
+  	padding-right: 28px; 
+  	background-size:26px; 
+  	background-color: #fff;
+}
+select::-ms-expand { 
+	display: none; 
+}
+
+.associated-file-content.divError{
+	border: 1px solid #E07470;
+}
+.btn.dropdown-toggle.btn-default{
+	background-color:#fff;
+}
+/*-----------琛ㄥ崟-End-----------*/
+
+
+
+/*-----------琛ㄦ牸-Start-----------*/
+.file-upload{
+    width: 100%;
+    padding: 0 10px;
+}
+.table{
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,0); 
+}
+.table thead > tr > th, 
+.table tbody > tr > th, 
+.table tfoot > tr > th, 
+.table thead > tr > td, 
+.table tbody > tr > td, 
+.table tfoot > tr > td{
+    border-color:#bdc8f5;
+}
+.table > thead > tr > th{
+    background-color: #666b81;
+    color:#fff;
+    text-align: center;
+    font-family: "Microsoft Yahei";
+}
+.table thead > tr > th.serial-num{
+    width: 4em;
+}
+.table tbody > tr > td > input,
+.table tbody > tr > td > textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+.table tbody > tr > td > input:focus,
+.table tbody > tr > td > textarea:focus{
+    outline: none;
+}
+.table tbody > tr > td{
+    position: relative;
+}
+.table tbody > tr > td.dataTables_empty{
+	display:none;
+}
+.table tbody > tr > td a{
+    padding: 5px 8px;
+    cursor: pointer;
+    color: #333;
+}
+.table tbody > tr > td > input[type="file"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 99;
+}
+.add-tr-btn{
+    color:#64a565;
+    width: 160px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    /* font-size: 18px; */
+}
+.add-tr-btn:focus, .add-tr-btn:hover{
+	color:#64a565;
+}
+.add-btn i{
+    margin-right: 5px;
+}
+.explanation-content p{
+	margin-top:10px;
+    margin-bottom: 20px;
+}
+.table-title{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+}
+.table-center th, .table-center td{
+	text-align: center;
+}
+
+.table thead > tr > th{
+	padding-top:8px;
+	padding-bottom:8px;
+}
+.table>tfoot>tr>td{
+	padding:0 8px;
+}
+.table-bordered>thead>tr>th{
+	border:1px solid #9B9FB0;
+}
+
+.serial-num{
+	width:4em;
+}
+.icons-btn-1{
+	width:4em;
+}
+.icons-btn-2{
+	width:6em;
+}
+.icons-btn-3{
+	width:8em;
+}
+.icons-btn-4{
+	width:10em;
+}
+.icons-btn-5{
+	width:12em;
+}
+
+.table tbody > tr > td.width-td{
+	width:50px;
+}
+.table tbody > tr > td.width-td input{
+	cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.div-hidden{
+	display:none;
+}
+/*-----------琛ㄦ牸-End-----------*/
+
+
+
+/*-----------鎸夐挳-Start-----------*/
+.btn-content{
+    text-align: center;
+    padding: 20px 0 30px 0;
+}
+.btn-content .btn{
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    color:#fff;
+    margin:0 15px;
+}
+.btn i{
+    margin-right: 5px;
+}
+.btn-color1{
+    background-color:#64a565;
+    /* border-bottom: 3px solid #417b41; */
+    color: #fff;
+}
+.btn-color2{
+    background-color:#282e50;
+    /* border-bottom: 3px solid #151932; */
+    color: #fff;
+}
+.btn-color1:hover,
+.btn-color1:focus,
+.btn-color2:hover,
+.btn-color2:focus{
+	color:#fff;
+}
+/*-----------鎸夐挳-End-----------*/
+
+
+/*-----------鍥剧墖涓婁紶-Start-----------*/
+.add_upload{
+	display:none;
+}
+.upload_box{
+	margin: 0 auto;
+}
+.upload_main.single_main{
+	border-radius: 4px;
+}
+.info{
+	height: 44px;
+}
+.upload_submit, .upload_inf{
+	display:none;	
+}
+.file_del{
+	background:url("../../images/eeip/delete_white.png") no-repeat scroll 0 0 transparent;
+}
+.file_del:hover{
+	background:url("../../images/eeip/delete_white.png") no-repeat scroll 0 0 transparent;
+}
+.upload_preview{
+	min-height:141px;
+}
+.file_success{
+    background: url("../../images/eeip/success.png") no-repeat scroll right bottom transparent;
+}
+/*-----------鍥剧墖涓婁紶-End-----------*/
+
+
+
+/*-----------鏍囩椤�Start-----------*/
+.tabs-content{
+    width: 100%;
+    padding: 15px 12px 0 12px;
+}
+.nav-justified.tabs-nav{
+    width: 100%;
+    transform: skew(-30deg);
+    -webkit-transform: skew(-30deg);聽
+    -moz-transform: skew(-30deg);
+    -o-transform:skew(-30deg);
+    -ms-transform:skew(-30deg);
+    background-color: #eee;
+    overflow: hidden;
+    margin-bottom: 0;
+    border-bottom:1px solid #62667f;
+}
+.tabs-nav li{
+    padding: 6px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.tabs-nav li.active,
+.tabs-nav li.active-hover{
+    background-color: #62667f;
+}
+.tabs-nav li.active a,
+.tabs-nav li.active-hover a{
+    color:#fff;
+}
+.tabs-nav li:first-child a,
+.tabs-nav li.active-hover a,
+.tabs-nav li.active a,
+.tabs-nav li.active-next a,
+.tabs-nav li.active-next a:hover,
+.tabs-nav li.active-next.active-no a:hover{
+    border-left:1px solid rgba(0,0,0,0); 
+}
+.tabs-nav li.active-no a:hover{
+	border-left: 1px solid #aebbdb;
+}
+.tabs-nav li a{
+    border-left: 1px solid #aebbdb;
+    width: 100%;
+    display: inline-block;
+    transform: skew(30deg);
+    -webkit-transform: skew(30deg);聽
+    -moz-transform: skew(30deg);
+    -o-transform:skew(30deg);
+    -ms-transform:skew(30deg);
+    color: #333;
+    font-size: 14px;
+    padding:0;
+}
+
+.tab-content{
+	background-color:rgba(0,0,0,0);
+    padding: 0px;
+    -moz-box-shadow: 0 3px 0 rgba(12,12,12,0);
+    -webkit-box-shadow: 0 3px 0 rgba(12,12,12,0);
+    box-shadow: 0 3px 0 rgba(12,12,12,0);
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus{
+	background-color:rgba(0,0,0,0);
+	color:#fff;
+}
+
+
+.tabs-list{
+	display:none;
+}
+.tabs-list.active{
+	display:block;
+}
+
+.iframe-page{
+	width:100%;
+	min-height:300px;
+    border: none;
+}
+
+.bar-code-iframe{
+	width:100%;
+	height:100px;
+	border:none;
+}
+/*-----------鏍囩椤�End-----------*/
+
+
+
+/*-----------妯″潡-Start-----------*/
+.form-module{
+    padding-bottom: 30px;
+    padding-top:10px;
+    border-bottom: 1px solid #efefef;
+}
+.form-module-title{
+    padding: 10px 0;
+    border-bottom: 1px solid #282e50;
+}
+.form-module-title p{
+    padding-left: 15px;
+    border-left: 3px solid #282e50;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+/*-----------妯″潡-End-----------*/
+
+
+
+/*-----------PDF妯″潡-Start-----------*/
+#pdf{
+    width: 100%;
+    height: 400px;
+    font-size: 0;
+}
+#pdf iframe{
+    width: 100%;
+    height: 100%;
+}
+/*-----------PDF妯″潡-End-----------*/
+
+
+
+/*-----------閴村畾浜嬮」-Start-----------*/
+.matter-content{
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.matter-module{
+    padding-bottom: 20px;
+}
+.matter-module-title{
+    /* font-size: 16px; */
+    padding: 10px 0 0 10px;
+}
+.matter-module-option{
+    overflow: hidden;
+    padding-left: 15px;
+}
+.other-position{
+    position: relative;
+}
+.other-input{
+    position: absolute;
+    top: 3px;
+    left: 75px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    height: 30px;
+    font-size: 16px;
+    width: 500px;
+}
+.modal-body .other-input{
+    top: -5px;
+}
+.other-input:focus,
+.other-inputs:focus{
+    outline: none;
+}
+.other-inputs{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 40px;
+}
+/*-----------閴村畾浜嬮」-End-----------*/
+
+
+
+/*-----------瑙嗛褰曞儚-Start-----------*/
+.video-content{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    position: relative;
+}
+.video-content2{
+    width: 100%;
+    height: 500px;
+}
+.video-btn{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index:1;
+    width: 100px;
+    height: 100px;
+    display:block;
+    margin-top: -50px;
+    margin-left: -50px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    color:#444;
+    font-size: 60px;
+    line-height:100px;
+}
+/*-----------瑙嗛褰曞儚-End-----------*/
+
+
+
+/*-----------涓婁紶鏂囦欢妯″潡-Start-----------*/
+.right-padding{
+	padding:0 10px;
+}
+.upload-module{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.margin-top{
+	margin-top:20px;
+}
+.module-title{
+    padding:10px 0;
+    border-bottom: 1px solid #282e50;
+}
+.module-title p{
+    margin-bottom: 0;
+    width: 100%;
+    border-left: 3px solid #282e50;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #333;
+}
+.file-list{
+    width: 100%;
+    overflow: hidden;
+    min-height: 20px;
+    padding-left:80px;
+}
+.list-content{
+	position:relative;
+    width: 100px;
+    padding-top: 20px;
+    float: left;
+    margin-right: 15px;
+}
+.list-content .remove{
+	position:absolute;
+	top:0px;
+	right:0px;
+	border:none;
+	background-color:rgba(0,0,0,0);
+	font-size:18px;
+	padding: 5px;
+	color: #ccc;
+}
+.list-content .remove:hover{
+	color:#333;
+}
+.list-img{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+.list-img img{
+    width: 100%;
+}
+.list-name{
+    width: 100%;
+    cursor: pointer;
+}
+.list-name p{
+    margin-bottom: 0;
+    padding: 10px 0;
+    text-align: center;
+    display:block;
+  	white-space:nowrap; 
+  	overflow:hidden; 
+  	text-overflow:ellipsis;
+}
+.upload-content{
+    width: 100%;
+    overflow: hidden;
+    padding-left:80px;
+}
+.upload-input{
+    float: left;
+    width: 50%;
+}
+.file-name{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    height: 34px;
+    padding: 0 10px;
+}
+.upload-btn{
+    float: left;
+    position: relative;
+}
+.upload-btn .btn{
+    margin-left: 20px;
+    height: 34px;
+    line-height:34px;
+    padding:0 15px;
+}
+.upload-btn .btn:hover,
+.upload-btn .btn:focus{
+    color:#fff;
+}
+.upload-file-name{
+    color: #282e50;
+    line-height: 34px;
+}
+.upload-padding{
+    padding-top: 10px;
+}
+.file-input{
+	/* display:none!important; */
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 0;
+    cursor: pointer;
+    width: 80px;
+    /* background-color: #000; */
+    height: 34px;
+    border-radius: 3px;
+    opacity: 0;
+    z-index: 99;
+}
+
+.upload-margin{
+	margin-top:20px;
+}
+
+.ccflie .remove{
+	background-color: rgba(0,0,0,0);
+    border: none;
+    padding: 5px 10px;
+}
+/*-----------涓婁紶鏂囦欢妯″潡-End-----------*/
+
+
+
+/*-----------鏌ョ湅澶у浘-Start-----------*/
+.img-upload{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.big-img{
+    width:100%;
+    min-height:250px;
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+.big-img img{
+    width:100%;
+   /*  height:100%; */
+}
+.img-list{
+    width:100%;
+    overflow:hidden;
+    padding:5px;
+    margin-bottom:0;
+}
+.img-list li{
+    width:100px;
+    height:100px;
+    padding:5px;
+    border:1px solid #ddd;
+    float:left;
+    margin:5px;
+}
+.img-list li span{
+    width:100%;
+    height:100%;
+    display:block;
+    overflow:hidden;
+    cursor: pointer;
+}
+.img-list li span img{
+    width:auto;
+    height:100%;
+}
+.bigImg{
+	width:100%;
+}
+/*-----------鏌ョ湅澶у浘-End-----------*/
+
+
+
+/*-----------娣诲姞鏂囦欢銆佸鍚�Start-----------*/
+.associated-file-content{
+	border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #fff;
+}
+.associated-file-list{
+	min-height: 100px;
+	overflow:hidden;
+}
+.list-width-50 li{
+	width:50%;
+}
+.list-width-name li{
+	width:12em;
+}
+.associated-file-list li{
+	float:left;
+	padding:0 30px 0 10px;
+	position: relative;
+	border-bottom:1px solid #fff;
+}
+.associated-file-list li:hover{
+	border-bottom:1px solid #dcdcdc;
+}
+.associated-file-list li:hover span i{
+    color:#666;
+}
+.associated-file-list li p{
+	width:100%;
+	display:block;
+  	white-space:nowrap; 
+  	overflow:hidden; 
+  	text-overflow:ellipsis;
+  	margin-bottom:0;
+    line-height: 40px;
+}
+.associated-file-list li span{
+	position: absolute;
+    top: 50%;
+    right: 6px;
+    width: 24px;
+    height: 24px;
+    margin-top:-12px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.associated-file-list li span i{
+	color:#fff;
+}
+
+.add-associated-file{
+	padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+.add-associated-file .btn{
+	width: 100%;
+}
+.add-associated-file .btn:hover,
+.add-associated-file .btn:focus{
+	color:#fff;
+}
+.add-content{
+	margin-top: 10px;
+	display:none;
+	border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.search-content{
+	padding-bottom:10px;
+}
+.search-content .btn{
+    width: 80px;
+    height: 34px;
+    border-radius: 4px;
+    /* font-size: 16px; */
+    color: #fff;
+    display: inline-block;
+    margin-right: 10px;
+}
+.all-file-list{
+	overflow:hidden;
+}
+.all-file-list li{
+	float:left;
+	padding:0 10px;
+}
+.all-file-list li p{
+	display:block;
+  	white-space:nowrap; 
+  	overflow:hidden; 
+  	text-overflow:ellipsis;
+  	line-height:40px;
+  	margin-bottom:0;
+}
+.all-file-list li p span{
+	cursor: pointer;
+}
+.all-file-list li p span:hover{
+	border-bottom:1px solid #282e50;
+}
+
+.add-content .file-list{
+	overflow:hidden;
+	padding-left:0;
+}
+.add-content .file-list li{
+	width:25%;
+	float:left;
+}
+.add-content .file-list li span{
+	line-height:30px;
+	cursor: pointer;
+}
+.add-content .file-list li span:hover{
+	border-bottom:1px solid #282e50;
+}
+
+.readonly-bg-color, .disabled-bg-color{
+	background-color: #fff !important;
+}
+/*-----------娣诲姞鏂囦欢銆佸鍚�End-----------*/
+
+
+
+/*-----------鍏宠仈鏂囦欢-Start-----------*/
+.associated-file-area{
+	border: 1px solid #ccc;
+    overflow: hidden;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #fff;
+    min-height:62px;
+}
+.associated-file-area li{
+	float:left;
+	width:50%;
+	padding:0 10px;
+  	border-bottom:1px solid rgba(0,0,0,0);
+}
+.associated-file-area li p{
+	display:block;
+  	white-space:nowrap; 
+  	overflow:hidden; 
+  	text-overflow:ellipsis;
+  	line-height:40px;
+  	margin-bottom:0;
+  	cursor: pointer;
+}
+.associated-file-area li:hover{
+	border-bottom:1px solid #ccc;
+}
+/*-----------鍏宠仈鏂囦欢-End-----------*/
+
+
+
+/*-----------鎽勫儚澶�Start-----------*/
+.choose-content{
+	overflow:hidden;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	margin-top: 20px;
+    cursor: pointer;
+}
+.choose-content li{
+	float:left;
+	width:33.33333333333333333%;
+	height:300px;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+/*-----------鎽勫儚澶�End-----------*/
+
+
+
+/*-----------鏉″舰鐮�Start-----------*/
+.bar-code-content{
+	padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.bar-code-input{
+	display:none;
+}
+.bar-code-img{
+	margin: 0 auto !important;
+}
+.bar-code-text{
+	text-align: center;
+}
+/*-----------鏉″舰鐮�End-----------*/
+
+
+
+/*-----------蹇呭～椤�Start-----------*/
+.required-fields{
+	color: #E07470;
+	font-weight: bolder;
+	margin-top: -7px;
+    margin-right: 5px;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 16px;
+}
+/*-----------蹇呭～椤�End-----------*/

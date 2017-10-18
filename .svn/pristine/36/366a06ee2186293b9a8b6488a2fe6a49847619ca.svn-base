@@ -1,0 +1,57 @@
+.echarts-content{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    border-top:1px solid #ccc;
+}
+.echarts-content.border-top{
+	border-top: none;
+}
+.echarts-img{
+    width: 40%;
+    float: left;
+    position: relative;
+}
+.echarts-title{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.main{
+    width: 100%;
+    height: 300px;
+}
+.tooltip-content{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 50px;
+}
+.echarts-btn{
+	width:20%;
+	float:left;
+	line-height: 350px;
+	text-align: center;
+}
+
+.echarts-contents{
+	width: 100%;
+    padding-bottom: 20px;
+}
+.echarts-overflow{
+	overflow: hidden;
+}
+.echarts-contents .echarts-img{
+	width: 50%;
+}
+.dataTimes .form-group{
+	margin-bottom:0;
+}

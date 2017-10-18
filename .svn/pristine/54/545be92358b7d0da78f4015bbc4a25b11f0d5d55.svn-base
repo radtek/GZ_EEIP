@@ -1,0 +1,18 @@
+#Database Connection Configuration
+hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+hibernate.driverClassName=com.mysql.jdbc.Driver
+hibernate.db.url=jdbc\:mysql\://localhost\:3306/test_gzeeip?useUnicode\=true&amp;characterEncoding\=utf-8&amp;autoReconnect\=true
+hibernate.db.username=root
+hibernate.db.password=root
+
+#hibernate.dialect=org.hibernate.dialect.OracleDialect
+#hibernate.driverClassName=oracle.jdbc.driver.OracleDriver
+#hibernate.db.url=jdbc:oracle:thin:@192.168.5.210:1521:ORCL;characterEncoding\=utf-8
+#hibernate.db.username=test
+#hibernate.db.username=test
+
+#hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+#hibernate.driverClassName=org.postgresql.Driver
+#hibernate.db.url=jdbc\:postgresql\://localhost\:5432/test?useUnicode\=true&amp;characterEncoding\=utf-8
+#hibernate.db.username=test
+#hibernate.db.password=test

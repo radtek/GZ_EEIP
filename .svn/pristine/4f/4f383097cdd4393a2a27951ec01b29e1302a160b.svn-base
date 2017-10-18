@@ -1,0 +1,36 @@
+.bar-positive-demo {
+	border-color: #22A041;
+	background-color: #22A041;
+	background-image: linear-gradient(0deg, #22A041, #22A041 50%, transparent 50%);
+	color: #fff;
+}
+
+.bar-positive-demo .title {
+	color: #FFF;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 0;
+	overflow: hidden;
+	margin: 0 10px;
+	min-width: 30px;
+	height: 43px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 44px;
+}
+
+.back-btn:before {
+	color: #FFF;
+	font-size: 20px !important;
+}
+
+.done-btn {
+	background-color: #B6AEA2 !important;
+	color: #FFF !important;
+}

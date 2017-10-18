@@ -1,0 +1,6 @@
+.error{
+    border: 1px solid #E07470;
+}
+.error2{
+    border: 1px solid #E07470;
+}

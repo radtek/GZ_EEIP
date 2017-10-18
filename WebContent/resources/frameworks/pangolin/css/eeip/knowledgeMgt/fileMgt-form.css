@@ -1,0 +1,114 @@
+/* .associated-file-content{
+	border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #fff;
+}
+.associated-file-list{
+	min-height: 100px;
+	overflow:hidden;
+}
+.list-width-50 li{
+	width:50%;
+}
+.associated-file-list li{
+	float:left;
+	padding:0 30px 0 10px;
+	position: relative;
+	border-bottom:1px solid #fff;
+}
+.associated-file-list li:hover{
+	border-bottom:1px solid #dcdcdc;
+}
+.associated-file-list li:hover span i{
+    color:#666;
+}
+.associated-file-list li p{
+	width:100%;
+	display:block;
+  	white-space:nowrap; 
+  	overflow:hidden; 
+  	text-overflow:ellipsis;
+  	margin-bottom:0;
+    line-height: 40px;
+}
+.associated-file-list li span{
+	position: absolute;
+    top: 50%;
+    right: 6px;
+    width: 24px;
+    height: 24px;
+    margin-top:-12px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.associated-file-list li span i{
+	color:#fff;
+}
+
+.add-associated-file{
+	padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+.add-associated-file .btn{
+	width: 100%;
+}
+.add-associated-file .btn:hover,
+.add-associated-file .btn:focus{
+	color:#fff;
+}
+.add-content{
+	margin-top: 10px;
+	display:none;
+	border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.search-content{
+	padding-bottom:10px;
+}
+.search-content .btn{
+    width: 80px;
+    height: 34px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    margin-right: 10px;
+}
+.all-file-list{
+	overflow:hidden;
+}
+.all-file-list li{
+	float:left;
+	padding:0 10px;
+}
+.all-file-list li p{
+	display:block;
+  	white-space:nowrap; 
+  	overflow:hidden; 
+  	text-overflow:ellipsis;
+  	line-height:40px;
+  	margin-bottom:0;
+}
+.all-file-list li p span{
+	cursor: pointer;
+}
+.all-file-list li p span:hover{
+	border-bottom:1px solid #282e50;
+}
+
+.file-list{
+	overflow:hidden;
+}
+.file-list li{
+	width:25%;
+	float:left;
+}
+.file-list li span{
+	line-height:30px;
+} */

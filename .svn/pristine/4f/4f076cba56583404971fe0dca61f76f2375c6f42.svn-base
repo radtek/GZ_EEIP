@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Microsoft Yahei";
+  src: url('../../fonts/msyh.ttf');     
+}
+*{
+    font-family: "Microsoft Yahei";
+    margin: 0;
+    padding: 0;
+}
+a, a:hover, a:focus{
+    text-decoration: none;
+    /*cursor: pointer;*/
+}
+input, select, textarea{
+    font-family: "Microsoft Yahei" !important;
+}
+textarea{
+	resize:none;
+}
+ul, li{
+    list-style: none;
+}
+body{
+    background-color: #f9f9f9;
+    width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+}
+/* select.form-control{ 
+  	appearance:none;  
+  	-moz-appearance:none;  
+  	-webkit-appearance:none; 
+  	background: url("../../images/eeip/jiantou.png") no-repeat scroll right center transparent;  
+  	padding-right: 28px; 
+  	background-size:26px; 
+  	background-color: #fff;
+}
+select::-ms-expand { 
+	display: none; 
+} */
+
+
+/*-----------页面路径导航-Start-----------*/
+.crumbs-nav{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.crumbs-text{
+    margin-bottom: 0;
+    line-height: 49px;
+    color: #aaa;
+    font-size:13px;
+}
+.crumbs-text a{
+    color: #aaa;
+    font-size:13px;
+}
+.crumbs-text span{
+    margin: 0 5px;
+}
+/*-----------页面路径导航-End-----------*/
